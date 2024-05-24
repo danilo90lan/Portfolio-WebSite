@@ -141,6 +141,14 @@ footer {
         overflow: hidden; /* any content that exceeds the dimensions of the element's container will be hidden from the view. */
     }
 
+    .logo-name {
+        flex-direction: column;
+    }
+
+    .logo-name img {
+        margin: 0;
+    }
+
     header {
         background-color: hsla(211, 76%, 67%, 0.678);
         color: #ffffff;
@@ -156,7 +164,10 @@ footer {
     nav {
         display: flex;
         flex-direction: column;
-        /* flex: 1; */
+        margin-top: 1rem;
+        margin-left: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     main {
