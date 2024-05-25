@@ -163,6 +163,8 @@ footer {
     }
 
     .logo-name img {
+        width: 100px;
+        height: 100px;
         margin: 0;
     }
 
@@ -173,7 +175,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        width: 10rem;
+        width: 15rem;
         height: 100%;
         align-items: center; /* Center the logo horizontally */
     }
@@ -184,6 +186,8 @@ footer {
         margin-left: 0;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        height: 40%;
+        justify-content: space-around;
     }
 
     main {
