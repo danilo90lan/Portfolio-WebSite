@@ -6,6 +6,7 @@
     font-family: Arial, sans-serif;
     --background-color: #ffffffe8;
     --background-color-secondary: hsla(211, 82%, 13%, 0.925);
+    --foreground-color: #f44770;
 }
 
 body {
@@ -55,7 +56,7 @@ nav {
     flex-wrap: wrap;
     border-radius: 20px;
     font-size: 17px;
-    box-shadow: 5px 5px 30px rgba(235, 19, 19, 0.815);
+    box-shadow: 10px 10px 50px var(--foreground-color);
 
 }
 
@@ -71,7 +72,7 @@ nav {
 
     nav a:hover {
         transition: 0.25s;
-        background: rgba(235, 19, 19, 0.815);
+        background: var(--foreground-color);
         color:white;
     }
 
@@ -108,7 +109,7 @@ footer {
 }
 
 .social-media a i {
-    font-size: 24px;
+    font-size: 35px;
     color: darkgrey;
 }
 
@@ -130,23 +131,22 @@ footer {
 
 
 .social-media .icon:hover .pop-up {
-    top: -40px;
+    top: -55px;
     opacity: 1;
     visibility: visible;
 }
 
-.info p {
-    margin: 0;
+.info span {
+    padding: 0.3rem;
 }
-
-.info p:first-child {
-    margin-bottom: 10px;
+.info div {
+    padding: 0.3rem;
 }
 
 .main-topic {
     text-align: center;
     font-size: 20px;
-    color: red;
+    color: var(--foreground-color);
     margin-bottom: 2rem;
 }
 
@@ -214,5 +214,9 @@ footer {
         position: static;
         width: 100%;    /* takes the whole width of the viewport */
         margin: 0;  /* set the margin back to 0 */
+    }
+
+    .info span {
+        font-size: 20px;
     }
  }

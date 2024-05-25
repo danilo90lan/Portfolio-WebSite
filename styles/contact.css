@@ -69,7 +69,7 @@ main, input, textarea {
     border: none;
     cursor: pointer;
     color: #fff;
-    background: #f44770;
+    background: var(--foreground-color);
     box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
     transition: 0.5s;
 }
