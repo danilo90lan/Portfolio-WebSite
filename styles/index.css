@@ -1,7 +1,7 @@
 :root {
     box-sizing: border-box; 
     font-family: Arial, sans-serif;
-    overflow: hidden; /* any content that exceeds the dimensions of the element's container will be hidden from the view. */
+    /* overflow: hidden; */ /* any content that exceeds the dimensions of the element's container will be hidden from the view. */
 }
 
 body {
@@ -64,17 +64,16 @@ nav {
     }
 
 main {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    
 }
 
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    position: absolute; /* the footer is given absolute position and bottom:0 to ensure is stuck at the bottom */
-    bottom: 0;
-    left: 0;
     width: 100%;    /* it takes the 100% of the width */
 }
 
@@ -115,19 +114,14 @@ footer {
 
 
 .info p {
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
  @media screen and (width > 600px) {
-/*     body {  
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
-
+    
     .main-box {     /* use flexbox in column direction to stack the header, main and footer */
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* footer is always at the bottom with the column layout */
         height: 100dvh;  /* it takes 100% of the viewport height (Dynamic) */
         width: 100%;    /* the main and the header takes the 100% of the viewport */
     }
@@ -169,6 +163,12 @@ footer {
         flex: 1;    /* the main is set to flex:1 so it can take all the available space in horizontal */
         background-color: #e2ebf5;
         padding: 1rem;
+        flex-direction: row;
     }
     
+    footer {                /* he footer will always stay at the bottom of the page adapting well to different screen sizes */
+        position: static;
+        width: 100%;
+    }
+
  }

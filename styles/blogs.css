@@ -8,6 +8,7 @@ main {
     font-family: roboto, sans-serif;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .card {
@@ -69,8 +70,10 @@ main {
 }
 
 .card-btn {
-    color: #1f3d47;
-    background: #8fabba;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    background: #8fabba7a;
     justify-content: center;
     margin-top: 10px;
     padding: 10px 20px;
