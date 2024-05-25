@@ -1,6 +1,4 @@
 * {
-    margin: 0;                  /* it sets the margins and padding to 0 as default */
-    padding: 0;
     box-sizing: border-box; 
 }
 
