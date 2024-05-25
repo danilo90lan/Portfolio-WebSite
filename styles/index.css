@@ -67,6 +67,7 @@ main {
     flex-direction: column;
 }
 
+
 footer {
     background: #333;
     color: #fff;
@@ -124,6 +125,12 @@ footer {
     margin: 0;
 }
 
+.main-topic {
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
  @media screen and (width > 600px) {
     
     .main-box {     /* use flexbox in column direction to stack the header, main and footer */
@@ -168,8 +175,7 @@ footer {
 
     main {
         flex: 1;    /* the main is set to flex:1 so it can take all the available space in horizontal */
-        flex-direction: row;    /* change the layout to rows for bigger screens */
-        background-color: #e2ebf5;       
+        background-color: #e2ebf5;    
     }
     
     footer {                /* the footer will always stay at the bottom of the page adapting well to different screen sizes */
