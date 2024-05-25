@@ -137,6 +137,11 @@ footer {
     font-size: 20px;
     color: red;
     font-family: "Danfo", serif;
+    margin-bottom: 2rem;
+}
+
+.main-topic h1 {
+    margin-bottom: 0;
 }
 
  @media screen and (width > 600px) {
