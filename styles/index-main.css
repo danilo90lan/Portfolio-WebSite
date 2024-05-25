@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.photo-id {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px double black;
+    background-color: white;
+    border-radius: 10%;
+    transform: rotate(30deg);
+}
+
+.photo-id img {
+    width:100px;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+}
+
+@media screen and (width > 600px) {
+    .introduction {
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+}
