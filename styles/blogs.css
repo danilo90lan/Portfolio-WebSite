@@ -1,0 +1,79 @@
+* {
+    margin: 0;                  /* it sets the margins and padding to 0 as default */
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+main {
+    font-family: roboto, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 220px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;   /* any element exceeding the card div will be hidden */
+    border: 5px solid black;
+    position:relative;
+    margin-top: 0.8rem;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* it makes the image in proportion avoiding stretching */
+    border-radius: 15px;
+}
+
+.card-body {
+    width: 100%;        /* giving height and width 100% it will cover the whole card div */
+    height: 100%;
+    position: absolute;     /* take out the card-body from the natural flow of the elements */
+    top: 0;         /* aligns the card-body with the card container*/
+    right: -100%;   /* it will shift the card-body (title, date, description) to the right side, right next of the div card
+                        but it can't be seen because of the property overflow: hidden; */ 
+    border-radius: 15px;
+    background: #1f3d4718;    /* set the transaparency */
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;     /* it sets the transition time for the card:hover */
+}
+
+.card:hover .card-body{     /* setting the hover for the main card div but modifying the card.body */
+    right: 0;              /*  it overlays the card-body (title, date and description) on top of the card image  */
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-date {
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.card-description {
+    font-size: 17px;
+    padding-top: 1rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+.card-btn {
+    color: #1f3d47;
+    background: #8fabba;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
