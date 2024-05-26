@@ -119,21 +119,6 @@ footer {
     
 }
 
-.social-media .pop-up {
-    position: absolute;
-    top: 0;
-    padding: 5px 8px;
-    opacity: 1;
-    transition: all 0.3s ease;
-}
-
-
-.social-media .icon:hover .pop-up {
-    top: -55px;
-    opacity: 1;
-    visibility: visible;
-}
-
 .info span {
     padding: 0.3rem;
 }
@@ -220,5 +205,20 @@ footer {
 
     .info span {
         font-size: 20px;
+    }
+
+    .social-media .pop-up {
+        position: absolute;
+        top: 0;
+        padding: 5px 8px;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    
+    
+    .social-media .icon:hover .pop-up {
+        top: -55px;
+        opacity: 1;
+        visibility: visible;
     }
  }
