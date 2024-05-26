@@ -22,7 +22,8 @@
 
 .post {
     text-align: center;
-    font-style:italic
+    font-style:italic;
+    padding: 1.5rem 2rem 0 2rem;
 }
 
 .post h3 {
@@ -136,9 +137,5 @@ main {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-    }
-
-    .post {
-        padding: 2rem 2rem 0 2rem;
     }
 }

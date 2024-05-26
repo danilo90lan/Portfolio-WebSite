@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 4rem;
 }
 
 .photo-id {
@@ -32,6 +31,6 @@
     .introduction {
         flex-direction: row;
         justify-content: flex-start;
-
+        margin-left: 4rem;
     }
 }
