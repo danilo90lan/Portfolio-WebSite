@@ -84,7 +84,6 @@ main {
 footer {
     background: var(--background-color-secondary);
     color: #fff;
-    text-align: center;
     width: 100%;    /* it takes the 100% of the width */
     margin-top: 1rem;
     padding-top: 0.8rem;
@@ -103,7 +102,7 @@ footer {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin-right: 2rem;
+    text-align: center;
 }
 
 .social-media a i {

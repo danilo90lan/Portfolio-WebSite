@@ -10,9 +10,9 @@
     background-image: url("../images/background2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    margin: 1rem;
-    border-radius: 20px;
+    /* background-position: center; */
+    /* margin: 1rem; */
+    border-radius: 30px;
 }
 
 .presentation-body {
