@@ -78,11 +78,6 @@ main, input, textarea {
     background: #31279d;
 }
 
-.info-wrap {
-    display: flex;
-    flex-direction: column;
-}
-
 .card {
     background: #5f8beb;
     padding: 2rem;

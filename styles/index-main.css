@@ -5,19 +5,55 @@
 .introduction {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.presentation-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background: var(--background-color);
+    margin: 2rem 1.5rem 1.5rem 1.5rem;
+    padding: 0 2rem;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.presentation span {
+    color: var(--foreground-color);
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.presentation {
+    width: 80%;
+    height: 60%;
+    background: #fff;
+    border-radius: 30px;
+    border: 3px double black;
+    margin: 2rem;
+    transform: rotate(-20deg);
+}
+
+.presentation-text {
+    transform: rotate(20deg);
+    text-align: center;
+    padding: 10px;
 }
 
 .photo-id {
     height: 120px;
     width: 120px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 3px double black;
     background-color: white;
-    border-radius: 10%;
+    border-radius: 20px;
+    margin-top: 1rem;
     transform: rotate(30deg);
 }
 
@@ -27,10 +63,36 @@
     transform: rotate(-30deg);
 }
 
+.presentation-body button {
+    background: var(--foreground-color);
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--background-color);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.presentation-body button:hover{
+    background: #31279d;
+}
+
+
 @media screen and (width > 600px) {
     .introduction {
         flex-direction: row;
         justify-content: flex-start;
         margin-left: 4rem;
+    }
+
+    .photo-id {
+        width: 250px;
+        height: 230px;
+    }
+
+    .photo-id img {
+        width: 160px;
     }
 }
