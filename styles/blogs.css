@@ -10,8 +10,14 @@
     align-items: center;
     background: var(--background-color);
     border-radius: 20px;
-    flex: 1;
+    /* flex: 1; */
     margin-top: 3rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .post {
@@ -32,14 +38,14 @@
     overflow: hidden;   /* any element exceeding the card div will be hidden */
     border: 5px solid black;
     position:relative;
-    margin-top: 0.8rem;
+    margin-top: 1rem;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.card h1 {
+/* .card h1 {
     padding-top: 1.5rem;
-}
+} */
 
 .card img {
     width: 100%;
@@ -113,8 +119,7 @@
     background-color: #ffffffe8;
     border-radius: 20px;
     color: black;
-    padding: 2rem;
-    padding-top: 0;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 main {
@@ -122,14 +127,18 @@ main {
 }
 
 @media screen and (width > 600px) {
-    .blog-posts {
+    main {
+        padding: 3rem;
+        padding-top: 0;
+    }
+
+    .cards-container {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
     }
 
-    main {
-        padding: 3rem;
-        padding-top: 0;
+    .post {
+        padding: 2rem 2rem 0 2rem;
     }
 }
