@@ -57,6 +57,7 @@ nav {
     font-size: 17px;
     box-shadow: 10px 10px 50px var(--foreground-color);
     margin-left: 0.5rem;
+    padding: 0;
 }
 
     nav a {
@@ -67,7 +68,6 @@ nav {
         text-decoration: none;
         padding: 8px 16px;
         border-radius: 22px;
-        height: 4rem;
     }
 
     nav a:hover {
@@ -187,10 +187,12 @@ footer {
         flex-direction: column;
         margin-top: 1rem;
         margin-left: 0;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
         height: 60dvh;
         justify-content: space-around;
+    }
+
+    nav a {
+        height: 4rem;
     }
 
     main {
