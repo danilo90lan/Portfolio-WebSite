@@ -7,13 +7,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1rem;
+    border-radius: 20px;
 }
 
 .presentation-body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
     background: var(--background-color);
     margin: 2rem 1.5rem 1.5rem 1.5rem;
     padding: 0 2rem;
@@ -29,9 +34,8 @@
 }
 
 .presentation {
-    width: 80%;
-    height: 60%;
-    background: #fff;
+    width: 100%;
+    background: var(--background-color);
     border-radius: 30px;
     border: 3px double black;
     margin: 2rem;
@@ -45,22 +49,24 @@
 }
 
 .photo-id {
-    height: 120px;
-    width: 120px;
+    height: 170px;
+    width: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px double black;
-    background-color: white;
+    border: 3px solid black;
+    background-image: url("../images/id-background3.jpg");
+    background-position: center;
+    /* background-color: var(--background-color); */
     border-radius: 20px;
-    margin-top: 1rem;
-    transform: rotate(30deg);
+    margin-top: 2rem;
+    transform: rotate(45deg);
 }
 
 .photo-id img {
-    width:100px;
-    border-radius: 50%;
-    transform: rotate(-30deg);
+    width:150px;
+    border-radius: 22% 78% 50% 50% / 39% 76% 24% 61%;
+    transform: rotate(-45deg);
 }
 
 .presentation-body button {
@@ -83,16 +89,25 @@
 @media screen and (width > 600px) {
     .introduction {
         flex-direction: row;
-        justify-content: flex-start;
-        margin-left: 4rem;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 5rem;
     }
 
     .photo-id {
-        width: 250px;
-        height: 230px;
+        width: 300px;
+        height: 300px;
+        margin-top: 4rem;
     }
 
     .photo-id img {
-        width: 160px;
+        width: 250px;
+    }
+
+    .presentation-body {
+        padding-top: 5rem;
+        margin-top: 5rem;
+        width: 700px;
     }
 }
