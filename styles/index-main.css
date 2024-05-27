@@ -10,7 +10,7 @@
     background-image: url("../images/background2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 30px;
@@ -36,7 +36,9 @@
 
 .presentation {
     width: 100%;
-    background: var(--background-color);
+    /* background: var(--background-color); */
+    background-image: url("../images/id-background3.jpg");
+    background-size: cover;
     border-radius: 30px;
     border: 3px double black;
     margin: 2rem;
@@ -50,25 +52,25 @@
 }
 
 .photo-id {
-    height: 170px;
-    width: 170px;
+    height: 200px;
+    width: 210px;
     display: flex;
     justify-content: center;
-    align-items: center;
     border: 3px solid black;
     background-image: url("../images/id-background3.jpg");
     background-position: center;
+    background-size: cover;
     /* background-color: var(--background-color); */
-    border-radius: 20px;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    transform: rotate(45deg);
+    border-radius: 35%;
+    margin-top: 2rem;
+    /* margin-bottom: 1rem; */
+    transform: rotate(20deg);
 }
 
 .photo-id img {
-    width:150px;
+    width:160px;
     border-radius: 22% 78% 50% 50% / 39% 76% 24% 61%;
-    transform: rotate(-45deg);
+    transform: rotate(-20deg);
 }
 
 .presentation-body button {
@@ -91,16 +93,16 @@
 @media screen and (width > 600px) {
     .introduction {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         margin: 5rem;
+        gap: 4rem;
     }
 
     .photo-id {
-        width: 300px;
-        height: 300px;
-        margin-top: 4rem;
+        width: 340px;
+        height: 300px;        
     }
 
     .photo-id img {
