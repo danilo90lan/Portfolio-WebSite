@@ -25,6 +25,7 @@
     /* background: var(--background-color); */
     background-image: url("../images/id-background3.jpg");
     background-size: auto;
+    background-attachment: fixed;
     margin: 2rem 1.5rem 1.5rem 1.5rem;
     padding: 0 2rem;
     border-radius: 30px;
@@ -62,6 +63,7 @@
     background-image: url("../images/id-background3.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     /* background-color: var(--background-color); */
     border-radius: 35%;
     margin-top: 2rem;
