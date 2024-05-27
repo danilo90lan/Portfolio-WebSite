@@ -11,7 +11,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
-    /* margin: 1rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-radius: 30px;
 }
 
@@ -59,7 +60,8 @@
     background-position: center;
     /* background-color: var(--background-color); */
     border-radius: 20px;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     transform: rotate(45deg);
 }
 

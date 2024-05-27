@@ -11,10 +11,12 @@
 
 body {
     background-image: url("../images/background.jpg");
-    background-repeat: repeat-y;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0;
-    min-height: 100dvh;     
+    height: 100dvh;     
 }
 
 header {
@@ -76,18 +78,19 @@ nav {
         color:white;
     }
 
-main {
+/* main {
     flex: 1;
 }
-
+ */
 
 footer {
     background: var(--background-color-secondary);
     color: #fff;
-    width: 100%;    /* it takes the 100% of the width */
+    width: 100dvw;    /* it takes the 100% of the viewport width */
     margin-top: 1rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
+    text-align: center;
 }
 
 .main-box {
@@ -183,10 +186,10 @@ footer {
     }
 
     nav {
+        margin: 0;
         flex-direction: column;
         margin-top: 1rem;
-        margin-left: 0;
-        height: 60dvh;
+        height: 50dvh;
         justify-content: space-around;
     }
 
