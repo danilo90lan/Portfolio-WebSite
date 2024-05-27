@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-image: url("../images/background2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,6 +40,7 @@
     /* background: var(--background-color); */
     background-image: url("../images/id-background3.jpg");
     background-size: cover;
+    /* filter: blur(3px); */
     border-radius: 30px;
     border: 3px double black;
     margin: 2rem;
@@ -101,12 +103,12 @@
     }
 
     .photo-id {
-        width: 340px;
-        height: 300px;        
+        width: 290px;
+        height: 250px;        
     }
 
     .photo-id img {
-        width: 250px;
+        width: 200px;
     }
 
     .presentation-body {

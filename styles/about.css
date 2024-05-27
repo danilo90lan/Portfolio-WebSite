@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+  }
+
+.about-main {
+    background: var(--background-color);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.interests p {
+    font-family: Roboto,sans-serif;
+    font-size: 22px;
+}
+
+.resume {
+    width: 300px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.resume button {
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    background: var(--foreground-color);
+    margin: 0px 12px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
+
+.resume button:hover {
+    background: #31279d;
+}
+
+.resume p {
+    font-size: 20px;
+}
+
+#blog-link {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: var(--background-color);
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.link {
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+
