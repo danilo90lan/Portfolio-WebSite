@@ -94,12 +94,11 @@
 
     .presentation-body {
         padding-top: 6rem;
-        width: 80%;
-        height: 80%;
+        width: 60%;
     }
 
     .presentation {
-        width: 60%;
+        width: 50%;
     }
 
 }

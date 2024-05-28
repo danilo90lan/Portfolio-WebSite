@@ -177,7 +177,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        width: 20rem;
+        width: 18rem;
         align-items: center; /* Center the logo horizontally */
     }
 
