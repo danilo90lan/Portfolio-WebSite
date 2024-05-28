@@ -77,6 +77,7 @@
 
 
 
+
 @media screen and (width > 600px) {
     .introduction {
         flex-direction: row;
@@ -101,4 +102,15 @@
         width: 50%;
     }
 
+    .splash {
+        visibility: initial;
+        background-image: url(../images/background2.jpg);
+        background-position: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+    }
+
+
 }
+
