@@ -11,11 +11,6 @@
 }
 
 body {
-/*     background-image: url("../images/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
     background: #E0E0DE;
     margin: 0;
     width: 100dvw;
@@ -104,7 +99,7 @@ footer {
 
 .social-media a i {
     font-size: 35px;
-    color: darkgrey;
+    color: #E0E0DE;
 }
 
 .social-media .icon {
@@ -208,14 +203,19 @@ footer {
         flex: 1;    /* the main is set to flex:1 so it can take all the available space in horizontal */  
     }
     
-    footer {  
-        position: static;              
+    footer {            
         width: 100dvw;    /* takes the whole width of the viewport */
         margin: 0;  /* set the margin back to 0 */
     }
 
     .info span {
         font-size: 20px;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .social-media {
+        gap: 20px;
     }
 
     .social-media .pop-up {
@@ -231,6 +231,11 @@ footer {
         top: -55px;
         opacity: 1;
         visibility: visible;
+    }
+
+    .information {
+        display: flex;
+        justify-content: space-between;
     }
 
 
