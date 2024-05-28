@@ -1,9 +1,38 @@
-<mxfile host="app.diagrams.net" modified="2024-05-28T10:29:54.614Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.4.9" etag="STpsO9zLyRzFAwAyFRhO" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-28T13:36:40.354Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="8DSPbOAnXDtIC4BpoEIk" version="24.4.9" type="github">
   <diagram name="Page-1" id="uxufGIXWbs5-0BUbtsG9">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="EXzUJdNr4rJLQJaG08HL-1" value="&lt;ul&gt;&lt;li style=&quot;font-size: 20px;&quot;&gt;HOME&lt;/li&gt;&lt;li style=&quot;font-size: 20px;&quot;&gt;ABOUT&lt;/li&gt;&lt;li style=&quot;font-size: 20px;&quot;&gt;BLOGS&lt;/li&gt;&lt;li style=&quot;font-size: 20px;&quot;&gt;CONTACT&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EXzUJdNr4rJLQJaG08HL-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EXzUJdNr4rJLQJaG08HL-3" target="EXzUJdNr4rJLQJaG08HL-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EXzUJdNr4rJLQJaG08HL-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EXzUJdNr4rJLQJaG08HL-3" target="EXzUJdNr4rJLQJaG08HL-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EXzUJdNr4rJLQJaG08HL-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EXzUJdNr4rJLQJaG08HL-3" target="EXzUJdNr4rJLQJaG08HL-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EXzUJdNr4rJLQJaG08HL-3" value="HOME" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="310" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EXzUJdNr4rJLQJaG08HL-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EXzUJdNr4rJLQJaG08HL-12" target="EXzUJdNr4rJLQJaG08HL-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EXzUJdNr4rJLQJaG08HL-12" value="ABOUT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="480" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EXzUJdNr4rJLQJaG08HL-14" value="BLOG" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EXzUJdNr4rJLQJaG08HL-20" value="CONTACT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="480" width="170" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
