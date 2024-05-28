@@ -10,11 +10,12 @@
 }
 
 body {
-    background-image: url("../images/background.jpg");
+/*     background-image: url("../images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
+    background: #E0E0DE;
     margin: 0;
     width: 100dvw;
     height: 100dvh;
@@ -59,7 +60,7 @@ nav {
     flex-wrap: wrap;
     border-radius: 20px;
     font-size: 17px;
-    box-shadow: 10px 10px 50px var(--foreground-color);
+    /* box-shadow: 10px 10px 50px var(--foreground-color); */
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     padding: 0;
@@ -176,7 +177,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        width: 15rem;
+        width: 20rem;
         align-items: center; /* Center the logo horizontally */
     }
 
@@ -194,7 +195,7 @@ footer {
 
     nav a:hover {
         transition: 0.5s;
-        background: var(--foreground-color);
+        background: rgba(28, 17, 99, 0.884);
         color:white;
         transform: scale(1.05);
     }
@@ -204,7 +205,6 @@ footer {
     }
     
     footer {                
-        position: static;
         width: 100dvw;    /* takes the whole width of the viewport */
         margin: 0;  /* set the margin back to 0 */
     }
