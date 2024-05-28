@@ -75,10 +75,6 @@ main, input, textarea {
     transition: 0.5s;
 }
 
-.submit-button:hover {
-    background: #31279d;
-}
-
 .card {
     background: #5f8beb;
     padding: 2rem;
@@ -93,10 +89,15 @@ main, input, textarea {
     #section-wrapper {
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
 
     .form-wrap {
         width: 50%
+    }
+
+    .submit-button:hover {
+        background: #31279d;
     }
 }

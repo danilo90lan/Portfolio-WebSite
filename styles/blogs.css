@@ -77,6 +77,7 @@
 
 .card:hover .card-body{     /* setting the hover for the main card div but modifying the card.body */
     right: 0;              /*  it overlays the card-body (title, date and description) on top of the card image  */
+    cursor: pointer;
 }
 
 .card-title {

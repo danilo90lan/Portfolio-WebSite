@@ -16,6 +16,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
+    width: 100dvw;
+    height: 100dvh;
 }
 
 header {
@@ -71,13 +73,6 @@ nav {
         text-decoration: none;
         padding: 8px 16px;
         border-radius: 22px;
-    }
-
-    nav a:hover {
-        transition: 0.5s;
-        background: var(--foreground-color);
-        color:white;
-        transform: scale(1.05);
     }
 
 footer {
@@ -196,6 +191,13 @@ footer {
 
     nav a {
         height: 2.5rem;
+    }
+
+    nav a:hover {
+        transition: 0.5s;
+        background: var(--foreground-color);
+        color:white;
+        transform: scale(1.05);
     }
 
     main {

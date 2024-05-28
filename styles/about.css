@@ -51,10 +51,6 @@
     transition: 0.5s;
 }
 
-.resume button:hover {
-    background: #31279d;
-}
-
 .resume p {
     font-size: 20px;
 }
@@ -89,5 +85,9 @@
         margin-right: 6rem;
         margin-left: 6rem;
         margin-bottom: 3rem;
+    }
+
+    .resume button:hover {
+        background: #31279d;
     }
 }
