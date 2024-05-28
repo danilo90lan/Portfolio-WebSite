@@ -20,6 +20,7 @@
     align-items: center;
     background-image: url("../images/id-background3.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 30px;
     margin-top: 2rem;
 }
@@ -35,12 +36,11 @@
     background: var(--background-color);
     border-radius: 30px;
     border: 3px solid black;
-    margin: 2rem;
-    /* transform: rotate(-20deg); */
+    margin: 3rem;
+    margin-bottom: 0;
 }
 
 .presentation-text {
-    /* transform: rotate(20deg); */
     text-align: center;
     padding: 10px;
     
@@ -74,7 +74,9 @@
     background: #31279d;
 }
 
-
+.wrapper {
+    text-align: center;
+}
 
 
 
@@ -94,12 +96,16 @@
     }
 
     .presentation-body {
+        flex-direction: row;
         padding-top: 6rem;
         width: 60%;
+        background-size: initial;
     }
 
     .presentation {
-        width: 50%;
+        width: 200px;
+        justify-content: flex-start;
+        
     }
 
     .splash {
@@ -110,7 +116,6 @@
         background-position: center;
         height: 300px;
     }
-
 
 }
 
