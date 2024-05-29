@@ -5,7 +5,6 @@
     box-sizing: border-box; 
     font-family: Arial, sans-serif;
     --background-color:#e0e0de70;
-    ;
     --background-color-secondary: hsla(211, 84%, 17%, 0.781);
     /* --background-color-secondary: hsla(211, 82%, 13%, 0.925); */
     --foreground-color: #f44770;
@@ -38,6 +37,7 @@ header {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    border: 3px solid black;
 }
 
 
@@ -133,12 +133,11 @@ footer {
 }
 
 .cover-photo {
-    visibility: initial;
     background-image: url(../images/background2.jpg);
     background-position: fixed;
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 100px;
 }
 
  @media screen and (width > 600px) {
@@ -167,6 +166,10 @@ footer {
 
     .name {
         font-size: 30px;
+    }
+
+    .cover-photo {
+        height: 250px;
     }
 
     header {
