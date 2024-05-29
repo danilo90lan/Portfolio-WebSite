@@ -37,17 +37,14 @@
     width: 220px;
     height: 350px;
     border-radius: 20px;
-    overflow: hidden;   /* any element exceeding the card div will be hidden */
+    overflow: hidden;           /* any element exceeding the card div will be hidden 
+                                in this case it's the card-body*/
     border: 5px solid black;
     position:relative;
     margin-top: 1rem;
     text-align: center;
     margin-bottom: 2rem;
 }
-
-/* .card h1 {
-    padding-top: 1.5rem;
-} */
 
 .card img {
     width: 100%;
@@ -115,6 +112,9 @@
 }
 
 .blog-introduction {
+    background: var(--background-color);
+    border-radius: 20px;
+    margin: 2rem;
     font-size: 20px;
     font-family: Roboto, sans serif;
     text-align: justify;     

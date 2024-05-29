@@ -66,6 +66,28 @@ nav {
         border-radius: 22px;
     }
 
+nav a::after {
+    content: "";        /* giving an empty content in order for the pseudo element to be created*/
+    display: block;     
+    height: 3px;
+    background-color: var(--foreground-color);
+    transform: scale(0);        /* scale(0) hides the new pseudo element created */
+    transition: 0.3s all ease;
+    transform-origin: left;   
+}
+
+nav a:hover::after {
+    transform: scale(1);        /* scale(1) make the pseudo element be visible */
+
+}
+
+/* nav a:hover {
+        transition: all ease 0.5s;
+        background: rgba(28, 17, 99, 0.884);
+        color:white;
+        transform: scale(1.05);
+} */
+
 footer {
     background: var(--background-color-secondary);
     color: #fff;
@@ -188,13 +210,6 @@ footer {
         margin-top: 1rem;
         justify-content: space-around;
         gap: 3rem;
-    }
-
-    nav a:hover {
-        transition: all ease 0.5s;
-        background: rgba(28, 17, 99, 0.884);
-        color:white;
-        transform: scale(1.05);
     }
 
     main {
