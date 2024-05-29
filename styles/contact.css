@@ -64,7 +64,7 @@ form textarea {
 }
 
 
-@media screen and (width > 600px) {
+@media screen and (min-width: 768px) {
     #section-wrapper {
         flex-direction: row;
         justify-content: center;

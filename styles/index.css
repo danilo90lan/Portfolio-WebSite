@@ -93,7 +93,7 @@ footer {
 
 .social-media a i {
     font-size: 35px;
-    color: #E0E0DE;
+    color: #fff;
 }
 
 .social-media .icon {
@@ -140,7 +140,7 @@ footer {
     height: 100px;
 }
 
- @media screen and (width > 600px) {
+ @media screen and (min-width: 768px) {
     
     .main-box {     /* use flexbox in column direction to stack the header, main and footer */
         display: flex;
@@ -208,7 +208,7 @@ footer {
 
     .info span {
         font-size: 20px;
-        margin-right: 2rem;
+        margin-right: 0.5rem;
         margin-bottom: 2rem;
     }
 
