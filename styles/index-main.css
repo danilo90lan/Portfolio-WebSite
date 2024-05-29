@@ -35,7 +35,7 @@
     background: #ffffffdc;
     border-radius: 30px;
     border: 3px solid black;
-    margin: 5rem;
+    margin: 4rem;
     margin-bottom: 0;
     overflow: hidden;
 }
@@ -62,6 +62,7 @@
     background: var(--foreground-color);
     width: 120px;
     height: 40px;
+    margin-bottom: 1rem;
     border-radius: 10px;
     color: #fff;
     font-size: 15px;
@@ -86,7 +87,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin: 5rem;
+        margin: 4rem 0 4rem 0;
         gap: 4rem;
     }
 
@@ -100,7 +101,7 @@
         padding-top: 6rem;
         margin: 0;
         /* width: 60%; */
-        width: 700px;
+        width: 600px;
         background-size: initial;
     }
 

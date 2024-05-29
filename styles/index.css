@@ -21,23 +21,24 @@ header {
     background-color:  var(--background-color-secondary);
     color: #fff;
     width: 100dvw;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
 }
 
-.logo-name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.logo-name img {
+.logo {
     margin-top: 1rem;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     border: 3px solid black;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -80,13 +81,6 @@ nav a:hover::after {
     transform: scale(1);        /* scale(1) make the pseudo element be visible */
 
 }
-
-/* nav a:hover {
-        transition: all ease 0.5s;
-        background: rgba(28, 17, 99, 0.884);
-        color:white;
-        transform: scale(1.05);
-} */
 
 footer {
     background: var(--background-color-secondary);
@@ -176,13 +170,10 @@ footer {
         flex: 1;    /* takes up to the available space */
     }
 
-    .logo-name {
-        flex-direction: column;
-    }
 
-    .logo-name img {
-        width: 100px;
-        height: 100px;
+    .logo {
+        width: 120px;
+        height: 120px;
         margin: 0;
     }
 
@@ -250,6 +241,27 @@ footer {
         display: flex;
         justify-content: space-between;
     }
+ }
 
+/* media query for tablets */
 
+ @media screen and (min-width: 600px) and (max-width: 767px) {
+    
+    .logo-text {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    nav {
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .main-title {
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
  }
