@@ -7,7 +7,7 @@
     <link rel = "stylesheet" type = " text/css" href = "../styles/index.css">
     <link rel = "stylesheet" type = " text/css" href = "../styles/contact.css">
  
-    <link rel = "icon" href = "../images/logo.png">
+    <link rel = "icon" href = "../images/logo.jpg">
     <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> <!-- importing the social media icons -->
 </head>
 <body>
@@ -17,10 +17,10 @@
             <header>
                 <div class = "logo-name">
                         <a href = "../index.html">
-                            <img src = "../images/logo.png" alt = "Portfolio logo">
+                            <img src = "../images/logo.jpg" alt = "Portfolio logo">
                         </a>
               
-                        <div class = "main-title"><p class = "name">Danilo's Portfolio</p></div>
+                        <div class = "main-title"><p class = "name">Danilo Lannocca</p></div>
                     
                     
                     </div>
@@ -39,33 +39,29 @@
 
                 <div class = "main-topic"><H1>CONTACT FORM</H1></div>
 
-                    <div id = "section-wrapper">
+                    <div id = "wrapper">
                                 
-                                <section class = "form-wrap">
+                                <div class = "form-wrap">
                                     <h2 class = "info-sub-title">Send a Message</h2>
-                                    <form action = "#" method = "POST">
-                                            <h3 class = "form-title">Fill up the form</h3>
-                                        
-                                        <div class = "form-fields">
+                                    <form>
                                             
                                                 <input type = "text" class = "fname" placeholder = "First Name">
                                            
                                             
-                                                <input type = "text" class = "lname" placeholder = "Last Name">
+                                                <input type = "text" id = "lname" placeholder = "Last Name">
                                            
                                             
-                                                <input type = "email" class = "email" placeholder = "e-mail">
+                                                <input type = "email" id = "email" placeholder = "e-mail">
                                            
                                             
-                                                <input type = "number" class = "phone" placeholder = "Phone">
+                                                <input type = "number" id = "phone" placeholder = "Phone">
                                            
                                            
-                                                <textarea name = "message" id = "" placeholder = "Write your message"></textarea>
-                                            
-                                        </div>
-                                        <a href = "#"><input type = "button" value = "Send message" class = "submit-button"></a>
+                                                <textarea name = "message" id = "message" placeholder = "Write your message"></textarea>
+                              
                                     </form>
-                                </section>
+                                    <a href = "#"><input type = "submit" value = "Send message" class = "submit-button"></a>
+                                </div>
 
                     </div>
 
