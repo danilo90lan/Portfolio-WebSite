@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danilo's Portfolio</title>
     <link rel = "stylesheet" type = " text/css" href = "../styles/index.css">
-    <link rel = "stylesheet" type = " text/css" href = "../styles/about.css">
+    <link rel = "stylesheet" type = " text/css" href = "../styles/main-blog.css">
 
     <link rel = "icon" href = "../images/logo.jpg">
     <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> <!-- importing the social media icons -->
@@ -27,7 +27,7 @@
                 
                     <nav>
                         <a href = "../index.html">Home</a>
-                        <a href = "#">About</a>
+                        <a href = "./about.html">About</a>
                         <a href = "./blogs.html">Blogs</a>
                         <a href = "./contact.html">Contact</a>
                     </nav>
@@ -36,40 +36,38 @@
             </header>
 
             <main>
+                
                 <div class = "cover-photo">     <!-- This div  will have a background-img property in thge .css stylesheet
                     with other properties to resize and position the img -->
-            </div>
-            
-                <div class = "main-topic"><H1>About me</H1></div>
-
-
-                <div class = "about-main">
-                    <div class = "interests">
-                        <p>Hi, I'm Danilo, I'm currently studying Web developing.
-                            It's something i was always passionated about and my goal in the near future is to work as full stack developer and 
-                            I'm willing to put all the effort towards this achievement.
-                            When I was back in my country I studied Coding and Computer Science, 
-                            I also did an internship for an IT company, working on a project that involved programming in VB.NET using .NET Framework, manage database using SQL and web developing server-side using php.       
-                            <br>At the moment I'm spending my free time writing <b>blogs</b> that involve a lot of researchings and commitment. </p>
-                            
-                        <div id = "blog-link">This is a list of blog bosts talking about the most known and used programming languages.
-                            <div class = link><a href="./blogs.html">Click here</a></div>
-                        </div>
-
-                        <p>
-                            I also do other activities other than just studying. I like dance salsa and bachata in many places around Melbourne where I got the chance to meet wonderful people.
-                            I'm an enterprising person willing to undertake new projects and initiatives.
-                            <br>My motto is "Don't give up, beautiful things need time in life".
-                        </p>
-                    </div>
-                        
-                    <div class = "resume">
-                        <p>If you are interested to know more about me, take a moment to read my resume.</p>
-                        <a href = "../documents/resume.pdf" target = "_blank"><button value = "btn">Download Resume</button></a>
-                    </div>
-                    
                 </div>
-               
+
+
+                <div class = "main-topic"><h1>Python</h1></div>
+
+                    <div class = "blog-wrapper">
+                        <div class = "blog-topic">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus voluptas saepe accusamus est sunt consequuntur unde perspiciatis atque dolores. Quasi dolorum magnam dolor, quo id sunt quod blanditiis iste?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus voluptas saepe accusamus est sunt consequuntur unde perspiciatis atque dolores. Quasi dolorum magnam dolor, quo id sunt quod blanditiis iste?
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat hic possimus qui quasi omnis voluptatem? Molestias numquam mollitia ab tempore beatae corporis porro saepe vel libero animi. Quibusdam, nihil.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nam animi doloremque in, perspiciatis repellat molestiae esse, unde officiis ea corporis non voluptatum facere possimus recusandae praesentium saepe eaque doloribus?
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, libero id. Culpa quos obcaecati voluptatum suscipit ipsam. Sint in velit veritatis ad illo porro rem tenetur, quibusdam iste praesentium doloremque.</p>
+                            </p>   
+                        </div>
+                        
+                            <div class = "blog-img">
+                                <div class = "img-wrapper"><img src = "../images/blog1.jpg" alt = "blog-img1"></div>
+                                <div class = "img-wrapper"><img src = "../images/blog2.jpg" alt = "blog-img2"></div>
+                            </div>
+                    </div>
+
+                    <div class = "arrows-wrap">
+                        <div class = "arrow" id = "left-arrow">
+                            <a href = "#" style = "pointer-events: none;"><i class="fa-solid fa-arrow-left"></i><p>Previous</p></a></div>
+                        
+                            <div class = "arrow" id = "right-arrow">
+                            <a href = "./blog-javascript.html"><i class="fa-solid fa-arrow-right"></i><p>Next</p></a></div>          
+                    </div>
+
             </main>
         </div>
 
