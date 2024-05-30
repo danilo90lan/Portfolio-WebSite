@@ -46,7 +46,7 @@ header {
 .main-title {
     font-family: "Recepts NF W01 Regular";
     font-size: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
 }
 
 .main-title p {
@@ -190,6 +190,10 @@ footer {
         font-size: 30px;
     }
 
+    .main-title {
+        letter-spacing: 5px;
+    }
+
     .cover-photo {
         height: 250px;
     }
@@ -221,7 +225,6 @@ footer {
     }
     
     footer {            
-        width: 100dvw;    /* takes the whole width of the viewport */
         margin: 0;  /* set the margin back to 0 */
     }
 
