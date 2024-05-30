@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/4ff6f056f9052b835e33438a16ed81d4?family=Recepts+NF+W01+Regular');
 
 :root {
     box-sizing: border-box; 
@@ -43,7 +44,14 @@ header {
 
 
 .main-title {
-    font-size: large;
+    font-family: "Recepts NF W01 Regular";
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.main-title p {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* .name {
@@ -58,27 +66,29 @@ nav {
     padding: 0;
 }
 
-    nav a {
-        color:white;
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: none;
-        padding: 8px 16px;
-        border-radius: 22px;
-    }
+nav a {
+    color:#fff;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 22px;
+}
 
+/* create a pseudo element after the element */
 nav a::after {
     content: "";        /* giving an empty content in order for the pseudo element to be created*/
-    display: block;     
-    height: 3px;
-    background-color: var(--foreground-color);
-    transform: scale(0);        /* scale(0) hides the new pseudo element created */
-    transition: 0.3s all ease;
+    display: block;    
+    height: 3px;        /* create ana elemnt of 3px height, the width is the same width of the <a> element */
+    background-color: #fff;
+    transform: scale(0);        /* scale(0) resize the new pseudo element to 0 creating an hiding effect*/
+    transition: 0.5s all ease;
     transform-origin: left;   
 }
 
 nav a:hover::after {
-    transform: scale(1);        /* scale(1) make the pseudo element be visible */
+    transform: scale(1);        /* scale(1) make the pseudo element be visible 
+                                    again with a sliding effect*/
 
 }
 
@@ -156,6 +166,8 @@ footer {
     height: 100px;
 }
 
+/* media query for desktop */
+
  @media screen and (min-width: 768px) {
     
     .main-box {     /* use flexbox in column direction to stack the header, main and footer */
@@ -191,7 +203,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        width: 18rem;
+        width: 20rem;
         align-items: center; /* Center the logo horizontally */
     }
 
@@ -201,6 +213,10 @@ footer {
         margin-top: 1rem;
         justify-content: space-around;
         gap: 3rem;
+    }
+
+    nav a {
+        font-size: 22px;
     }
 
     main {
@@ -256,8 +272,8 @@ footer {
 
     nav {
         justify-content: space-between;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 1rem;
+        margin-bottom: 0;
     }
 
     .main-title {
