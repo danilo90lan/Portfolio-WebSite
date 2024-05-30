@@ -88,6 +88,6 @@
     }
 
     .resume button:hover {
-        background: #31279d;
+        transform: scale(1.07);
     }
 }

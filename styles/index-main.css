@@ -72,9 +72,6 @@
     transition: 0.5s;
 }
 
-.presentation-body button:hover{
-    background: #31279d;
-}
 
 .wrapper {
     text-align: center;
@@ -110,6 +107,10 @@
         width: 200px;
         justify-content: flex-start;
         
+    }
+
+    .presentation-body button:hover {
+        transform: scale(1.07);
     }
 
 }
