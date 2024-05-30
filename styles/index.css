@@ -79,7 +79,7 @@ nav a::after {
     height: 3px;        /* create ana elemnt of 3px height, the width is the same width of the <a> element */
     background-color: #fff;
     transform: scale(0);        /* scale(0) resize the new pseudo element to 0 creating an hiding effect*/
-    transition: 0.5s all ease;
+    transition: 0.5s all ease-in-out;
     transform-origin: left;   
 }
 
