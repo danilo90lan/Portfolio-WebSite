@@ -69,6 +69,8 @@
     
     .blog-img {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .blog-wrapper {
