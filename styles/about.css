@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    text-align:justify ;
+    text-align: justify;
 }
 
 .interests p {
@@ -28,10 +28,10 @@
 .resume {
     background-color: #fff;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 1rem;
     font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;;
 }
 
 .resume button {
@@ -57,9 +57,9 @@
 
 #blog-link {
     font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: var(--background-color);
-    border-radius: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    background: #fff;
+    border-radius: 10px;
     padding: 1rem;
     text-align: center;
     margin-right: 1rem;
