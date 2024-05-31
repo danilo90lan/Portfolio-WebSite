@@ -39,6 +39,12 @@
     padding: 1rem 2rem 1rem 2rem;
 }
 
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .photo-id {
     margin-top: 1rem;
 }
@@ -92,12 +98,6 @@
         width: 200px;
         justify-content: flex-start;
         
-    }
-
-    .card-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .presentation-body button:hover {
