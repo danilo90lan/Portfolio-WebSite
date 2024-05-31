@@ -165,7 +165,7 @@ footer {
 
 /* media query for desktop */
 
- @media screen and (min-width: 768px) {
+ @media screen and (width > 768px) {
     
     .main-box {     /* use flexbox in column direction to stack the header, main and footer */
         display: flex;
@@ -261,7 +261,7 @@ footer {
 
 /* media query for tablets */
 
- @media screen and (min-width: 600px) and (max-width: 767px) {
+ @media screen and (min-width: 600px) and (max-width: 768px) {
     
     .logo-text {
         flex-direction: row;
@@ -278,6 +278,5 @@ footer {
 
     .main-title {
         margin-top: 2rem;
-        margin-right: 1rem;
     }
  }
