@@ -10,7 +10,6 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .presentation-body {
@@ -23,14 +22,14 @@
     border-radius: 10px;
 }
 
-.presentation span {
+.presentation-card span {
     color: var(--foreground-color);
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 4px;
 }
 
-.presentation {
+.presentation-card {
     background: #ffffff65;
     border-radius: 10px;
     margin: 3rem;
@@ -89,14 +88,16 @@
         background-size: initial;
     }
 
-    .presentation-body button {
-        margin-left: 6.5rem;
-    }
-
-    .presentation {
+    .presentation-card {
         width: 200px;
         justify-content: flex-start;
         
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .presentation-body button:hover {
