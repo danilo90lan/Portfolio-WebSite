@@ -92,11 +92,15 @@
         /* width: 60%; */
         width: 600px;
         background-size: initial;
+        
     }
 
     .presentation-card {
         width: 200px;
         justify-content: flex-start;
+        box-shadow: 12px 15px 7px -2px rgba(172,197,235,0.48);
+-webkit-box-shadow: 12px 15px 7px -2px rgba(172,197,235,0.48);
+-moz-box-shadow: 12px 15px 7px -2px rgba(172,197,235,0.48);
         
     }
 
