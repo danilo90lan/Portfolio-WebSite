@@ -58,3 +58,89 @@ Each card includes a hover property that reveals the card's content when the use
 ![Cards hover](./docs/images/card_hover.png)
 
 #### About
+
+The About page contains my presentation, including my skills, abilities, and hobbies. It features a link that directly connects the user to the Blogs page, making the website more dynamic.  
+Additionally, it has a button for downloading my resume.
+
+![Resume button](./docs/images/resume-button.png)
+
+#### Contact Form
+
+The contact form is an essential component of the website, allowing users to easily get in touch with me for any inquiries. It consists of a simple form with text input fields for entering their message and contact details, along with a submit button to send the message.
+
+## Site map
+
+
+When I built my website, I organized the navigation between pages to be very easy and intuitive. You can access every main page from the navigation menu. Additionally, from the About page, it's possible to access the Blog page through a link located in the main section, adding more dynamism.  
+
+The Blogs page features five different blog posts. When you open one, it links directly to the main blog, and you can navigate between each of them using arrow icon links.
+
+![Site map](./docs/images/sitemap.jpg)
+
+## Wireframes
+
+
+To build my portfolio website, I opted for a simple yet captivating look that also appears clean and professional. I chose a blue color scheme for the header and footer, with a light grey background to provide contrast and ensuring that the content remains visually engaging. Regarding the Typography I used the "Lato" and "Roboto" fonts pairing together in order to give a sharp and professional look.
+
+* #### Home page
+
+###### Home page - mobile
+![home - mobile](./docs/wireframes/home-mobile.png)
+
+###### Home page - tablet
+![home - tablet](./docs/wireframes/home-tablet.png)
+
+###### Home page - desktop
+![home - desktop](./docs/wireframes/home-desktop.png)
+
+* #### About page
+
+###### About page - mobile
+![about - mobile](./docs/wireframes/about-mobile.png)
+
+###### About page - tablet
+![about - tablet](./docs/wireframes/about-tablet.png)
+
+###### About page - desktop
+![about - desktop](./docs/wireframes/about-desktop.png)
+
+* #### Blogs page
+
+###### Blogs page - mobile
+![blogs - mobile](./docs/wireframes/blogs-mobile.png)
+
+###### Blogs page - mobile
+![blogs - tablet](./docs/wireframes/blogs-tablet.png)
+
+###### Blogs page - desktop
+![blogs - desktop](./docs/wireframes/blogs-desktop.png)
+
+* #### Contact page 
+
+###### Contact page - mobile
+![contact page - mobile](./docs/wireframes/contact-mobile.png)
+
+###### Contact page - tablet
+![contact page - tablet](./docs/wireframes/contact-tablet.png)
+
+###### Contact page - desktop
+![contact page - desktop](./docs/wireframes/contact-desktop.png)
+
+* #### Main blog page
+
+###### Main blog - mobile
+![main blog - mobile](./docs/wireframes/main_blog-mobile.png)
+
+###### Main blog - tablet
+![main blog - tablet](./docs/wireframes/main_blog-tablet.png)
+
+###### Main blog - desktop
+![main blog - desktop](./docs/wireframes/main_blog-desktop.png)
+
+## Target Audience
+
+The target audience of my portfolio website includes potential employers and companies interested in my skills and knowledge and willing to hire me.
+
+## Tech stack
+This website is been deployed by Netlify through a git repository.
+The link to visualise it is [here](https://daniloportfolio.netlify.app)
