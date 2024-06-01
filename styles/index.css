@@ -37,6 +37,11 @@ header {
     height: 80px;
     border-radius: 50%;
     border: 3px solid black;
+    transition: ease-in 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.10);
 }
 
 .logo-text {

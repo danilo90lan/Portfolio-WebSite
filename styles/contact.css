@@ -16,6 +16,8 @@ main, input, textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
+
 }
 
 .form-wrap {
@@ -50,7 +52,6 @@ form textarea {
 
 .submit-button {
     height: 60px;
-    margin: 0px 12px;
     padding: 1rem;
     border-radius: 30px;
     font-size: 20px;
@@ -67,10 +68,6 @@ form textarea {
 @media screen and (width > 768px) {
     .form-wrap {
         width: 50%;
-    }
-
-    .wrapper {
-        margin-bottom: 2rem;
     }
 
     .submit-button:hover {

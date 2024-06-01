@@ -44,25 +44,38 @@
 
 .arrows-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
-}
-
-.arrow {
-    margin: 3rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 1rem;
 }
 
 .arrow i {
-    font-size: 25px;
+    font-size: 30px;
     color: black;
 }
 
 .arrow a {
     text-decoration: none;
+    font-size: 25px;
+    color:black;
 }
 
+.arrow a p {
+    margin-top: 0;
+}
+
+#arrow-disabled a {
+    pointer-events: none;
+    color: darkgray;
+}
+
+#arrow-disabled i {
+    color: darkgrey;
+}
+
+#arrow-disabled a:hover {
+    cursor: default;
+}
 
 
 @media screen and (width > 768px) {
@@ -75,6 +88,18 @@
     .blog-img img {
         width: 420px;
         object-fit: cover;
+    }
+
+    .blog-topic {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .arrows-wrap {
+        justify-content: space-between;
+    }
+
+    .arrow {
+        margin: 0 4rem 0 4rem;
     }
 }
 
