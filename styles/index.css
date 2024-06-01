@@ -158,7 +158,8 @@ footer {
     border-radius: 20px;
     padding: 0.8rem;
     letter-spacing: 5px;
-    font-family: "Lato", sans-serif;;
+    font-family: "Lato", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .cover-photo {

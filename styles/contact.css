@@ -6,12 +6,6 @@ main, input, textarea {
     font-family: "Roboto", sans-serif;
 }
 
-.info-sub-title {
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 30px;
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -73,6 +67,4 @@ form textarea {
     .submit-button:hover {
         transform: scale(1.07);
     }
-
-
 }
