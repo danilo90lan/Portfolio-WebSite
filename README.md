@@ -70,12 +70,13 @@ The contact form is an essential component of the website, allowing users to eas
 
 ## Site map
 
+![Site map](./docs/images/sitemap.jpg)
 
 When I built my website, I organized the navigation between pages to be very easy and intuitive. You can access every main page from the navigation menu. Additionally, from the About page, it's possible to access the Blog page through a link located in the main section, adding more dynamism.  
 
-The Blogs page features five different blog posts. When you open one, it links directly to the main blog, and you can navigate between each of them using arrow icon links.
+The Blogs page display five different blog posts. When you open one, it links directly to the main blog, and you can navigate between each of them using the navigation arrows.
 
-![Site map](./docs/images/sitemap.jpg)
+![Navigation arrows](./docs/images/navigation_arrows.png)
 
 ## Wireframes
 
@@ -109,7 +110,7 @@ To build my portfolio website, I opted for a simple yet captivating look that al
 ###### Blogs page - mobile
 ![blogs - mobile](./docs/wireframes/blogs-mobile.png)
 
-###### Blogs page - mobile
+###### Blogs page - tablet
 ![blogs - tablet](./docs/wireframes/blogs-tablet.png)
 
 ###### Blogs page - desktop
@@ -139,8 +140,8 @@ To build my portfolio website, I opted for a simple yet captivating look that al
 
 ## Target Audience
 
-The target audience of my portfolio website includes potential employers and companies interested in my skills and knowledge and willing to hire me.
+The target audience of my portfolio website includes potential employers and companies interested in my skills and knowledge willing to hire me.
 
 ## Tech stack
-This website is been deployed by Netlify through a git repository.
-The link to visualise it is [here](https://daniloportfolio.netlify.app)
+This website is been deployed through Netlify by a git repository.
+The link to visualise it, is [here](https://daniloportfolio.netlify.app).
