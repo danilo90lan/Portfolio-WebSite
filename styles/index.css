@@ -103,7 +103,6 @@ footer {
     color: #fff;
     width: 100dvw;    /* it takes the 100% of the viewport width */
     padding-top: 1rem;
-    padding-bottom: 0.8rem;
     text-align: center;
 }
 
@@ -136,10 +135,10 @@ footer {
 }
 
 .info span {
-    padding: 0.3rem;
+    margin-right: 0.5rem;
 }
-.info div {
-    padding: 0.3rem;
+.info address {
+    padding: 0.5rem;
 }
 
 .main-topic {
