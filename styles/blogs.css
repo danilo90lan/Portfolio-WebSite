@@ -5,7 +5,7 @@
 .blog-posts {
     display: flex;
     flex-direction: column;
-    font-family: roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     justify-content: center;
     align-items: center;
     background: var(--background-color);
@@ -24,7 +24,6 @@
 
 .post {
     text-align: center;
-    font-style:italic;
     padding: 1.5rem 2rem 0 2rem;
 }
 
@@ -32,6 +31,7 @@
     margin: 0;
     font-size: 22px;
     color: black;
+    font-family: "Lato", sans-serif;
 }
 
 .card {
@@ -81,22 +81,23 @@
 
 .card-title {
     color: #fff;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: bold;
+    font-family: "Lato", sans-serif;
     margin: 0;
 }
 
 .card-date {
     color: #fff;
     font-size: 14px;
-    font-weight: 400;
     margin: 0;
+    margin-top: 0.5rem;
 }
 
 .card-description {
     color: #fff;
     font-size: 17px;
-    font-weight: 300;
+    font-style: italic;
     margin: 0.5rem 0;
 }
 
@@ -116,13 +117,13 @@
     background: var(--background-color);
     border-radius: 20px;
     margin: 2rem;
-    font-family: Roboto, sans serif;
+    font-family: "Roboto", sans-serif;
     text-align: justify;     
     font-size: 18px;   
     border-radius: 20px;
     color: black;
     padding: 1rem 2rem 1rem 2rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: var(--shadow);
 }
 
 

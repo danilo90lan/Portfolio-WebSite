@@ -10,6 +10,7 @@
     --background-color-secondary: hsla(211, 84%, 17%, 0.781);
     /* --background-color-secondary: hsla(211, 82%, 13%, 0.925); */
     --foreground-color: #f44770;
+    --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 body {
@@ -159,7 +160,7 @@ footer {
     padding: 0.8rem;
     letter-spacing: 5px;
     font-family: "Lato", sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: var(--shadow);
 }
 
 .cover-photo {

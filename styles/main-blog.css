@@ -15,12 +15,13 @@
     border-radius: 20px;
     margin: 1rem;
     font-size: 20px;
-    font-family: Roboto, sans serif;
+    font-family: "Roboto", sans-serif;
     font-size: 17px;   
     text-align: justify;
     border-radius: 20px;
     color: black;
     padding: 1rem 2rem 1rem 2rem;
+    box-shadow: var(--shadow);
 }
 
 .blog-img img {
@@ -40,6 +41,7 @@
     margin: 1rem;
     padding: 1.5rem;
     border-radius: 20px;
+    box-shadow: var(--shadow);
 }
 
 .arrows-wrap {
