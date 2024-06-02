@@ -7,54 +7,61 @@
     <link rel = "stylesheet" type = " text/css" href = "./styles/index.css">
     <link rel = "stylesheet" type = " text/css" href = "./styles/index-main.css">
     
+    <!-- setting the icon -->
     <link rel = "icon" href = "../images/logo.jpg">
-    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> <!-- importing the social media icons -->
+    <!-- importing icons from fontawesome.com -->
+    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div class =  "main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
         <div class = "contents"> <!-- the content div contains header and main -->
             <header>
+
+                <!-- this div contains the logo img and the website's title name -->
                 <div class = "logo-text">
-                    <div class = "logo-name">
+                    <figure class = "logo-name">
                         <a href = "./index.html">
                             <img src = "./images/logo.jpg" alt = "Portfolio logo" class = "logo">
-                        </a></div>
+                        </a>
+                    </figure>
               
                         <div class = "main-title"><p class = "name">Danilo Lannocca</p></div>
-                    
                 </div>
-          
+
+                    <!-- navigation bar -->
                     <nav>
                         <a href = "#">Home</a>
                         <a href = "./pages/about.html">About</a>
                         <a href = "./pages/blogs.html">Blogs</a>
                         <a href = "./pages/contact.html">Contact</a>
                     </nav>
-            
 
             </header>
             
-                <main>    
-                    <div class = "cover-photo">     <!-- This empty div  will have a background-img property in the .css stylesheet
-                                                        with other properties to resize and position the img -->
+                <main> 
 
-                    </div>
-                    
+                    <!-- This empty div  will have a background-img property set in the .css stylesheet
+                    with other properties to resize and position the img -->
+                    <div class = "cover-photo"></div>     
+                        
+                    <!-- main container -->
                     <div class = "presentation-main">
+
                             <figure class = "photo-id">
                                 <img src="./images/photoID.jpg">
                             </figure>
-
                             
-                                <section class = "presentation-body">  
-                                    <section class = "card-wrapper">   <!-- this div contains the presentation card and the button -->
+                            <section class = "presentation-body"> 
+
+                                    <!-- this section contains the presentation card and the button --> 
+                                    <section class = "card-wrapper">   
                                         <section class = "presentation-card">    
                                             <h2>
-                                                <!-- <p>Hi</p> -->
                                                 <p>Hi, I'm <span>Danilo</span></p>
                                                 <p>Web Developer</p> 
-                                            </h2>    
+                                            </h2>  
+
                                     </section>
                                         <h3><a href = "./pages/about.html"><button value = "Learn more">Learn more</button></a></h3>            
                                     </section>           
@@ -65,6 +72,7 @@
         </div>
 
         <footer>
+            <!-- section containing the social media icons and info -->
             <section class = "information">
 
                 <address class = "social-media">
