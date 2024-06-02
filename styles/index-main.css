@@ -24,7 +24,7 @@
 .presentation-card span {
     color: var(--foreground-color);
     font-size: 28px;
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: 4px;
 }
 
@@ -61,17 +61,25 @@
 
 .presentation-body button {
     background: var(--foreground-color);
-    width: 120px;
-    height: 40px;
+    width: 130px;
+    height: 50px;
     margin-bottom: 1rem;
     border-radius: 10px;
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
+    box-shadow: 12px 15px 7px -2px rgba(172,197,235,0.48);
+    -webkit-box-shadow: 12px 15px 7px -2px rgba(172,197,235,0.48);
+    -moz-box-shadow: 12px 15px 7px -2px rgba(172,197,235,0.48);
+    
 }
 
+.presentation-body button:hover {
+    background: #ffffff65;
+    color: var(--foreground-color);
+}
 
 @media screen and (width > 768px) {
     .presentation-main {
@@ -103,10 +111,6 @@
         width: 200px;
         justify-content: flex-start;
         
-    }
-
-    .presentation-body button:hover {
-        transform: scale(1.07);
     }
 }
 

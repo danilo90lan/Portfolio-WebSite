@@ -58,13 +58,15 @@ form textarea {
     transition: 0.5s;
 }
 
+.submit-button:hover {
+    background: #fff;
+    color: var(--foreground-color);
+    box-shadow: var(--deep-shadow);
+}
+
 
 @media screen and (width > 768px) {
     .form-wrap {
         width: 50%;
-    }
-
-    .submit-button:hover {
-        transform: scale(1.07);
     }
 }

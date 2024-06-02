@@ -76,6 +76,12 @@
     text-decoration: none;
 }
 
+.resume button:hover{
+    background: #fff;
+    color: var(--foreground-color);
+    box-shadow: var(--deep-shadow);
+}
+
 @media screen and (width > 768px) {
     .about-main {
         flex-direction: row;
@@ -86,9 +92,5 @@
         margin-right: 6rem;
         margin-left: 6rem;
         margin-bottom: 3rem;
-    }
-
-    .resume button:hover {
-        transform: scale(1.07);
     }
 }
