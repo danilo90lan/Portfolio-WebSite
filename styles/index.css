@@ -7,9 +7,9 @@
     box-sizing: border-box; 
     font-family: Arial, sans-serif;
     --background-color:#e0e0de70;
-    --background-color-secondary: hsla(211, 84%, 17%, 0.781);
-    /* --background-color-secondary: hsla(211, 82%, 13%, 0.925); */
-    --foreground-color: #B20000;
+    /* --background-color-secondary: hsla(211, 84%, 17%, 0.781); */
+    --background-color-secondary: hsla(211, 82%, 13%, 0.925);
+    --button-color: #B20000;
     --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     --deep-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     --button-shadow: #B20000 0px 5px 15px 0px;
@@ -44,7 +44,7 @@ header {
 }
 
 .logo:hover {
-    transform: scale(1.10);
+    transform: scale(1.05);
 }
 
 .logo-text {

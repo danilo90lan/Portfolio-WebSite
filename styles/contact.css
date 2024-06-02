@@ -61,7 +61,7 @@ form textarea {
 
 .submit-button:hover {
     background: #fff;
-    color: var(--foreground-color);
+    color: var(--button-color);
     box-shadow: var(--button-shadow);
 }
 
