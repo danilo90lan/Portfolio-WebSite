@@ -2,10 +2,12 @@
     box-sizing: border-box;
   }
 
+  /* styling the main container */
 .about-main {
     background: var(--background-color);
     margin: 2rem;
     padding: 1rem;
+    padding-bottom: 2rem;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -13,6 +15,7 @@
     box-shadow: var(--shadow);
 } 
 
+/* flexbox container displaying in column */
 .interests {
     display: flex;
     flex-direction: column;
@@ -26,6 +29,7 @@
     font-size: 18px;
 }
 
+/* styling the resume box */
 .resume {
     background-color: #fff;
     text-align: center;
@@ -36,6 +40,7 @@
     box-shadow: var(--shadow);
 }
 
+/* styling the resume button */
 .resume button {
     width: 180px;
     height: 60px;
@@ -53,7 +58,7 @@
     transition: 0.5s;
 }
 
-
+/* resume button animation hover */
 .resume button:hover{
     background: #fff;
     color: var(--button-color);
@@ -64,6 +69,7 @@
     font-size: 20px;
 }
 
+/* styling the text inside the blog link container */
 #blog-link {
     font-size: 18px;
     font-family: "Roboto", sans-serif;
@@ -81,6 +87,7 @@
     font-size: 20px;
 }
 
+/* stylin the blog link */
 .link a {
     color: var(--button-color);
     text-decoration: none;
@@ -90,7 +97,9 @@
     color: var(--button-color);
 }
 
+/* media query for desktop */
 @media screen and (width > 768px) {
+    /* dislaying the containers in row*/
     .about-main {
         flex-direction: row;
         justify-content: center;

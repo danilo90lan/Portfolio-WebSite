@@ -1,8 +1,9 @@
+/* box sizing set as default */
 * {
     box-sizing: border-box;
 }
 
-
+/* main container (photo-id and image) set to flexbox */
 .presentation-main {
     display: flex;
     flex-direction: column;
@@ -12,6 +13,8 @@
     margin-top: 1rem;
 }
 
+/* setting the container as flexbox for the image and the text container 
+    giving the background image*/
 .presentation-body {
     display: flex;
     flex-direction: column;
@@ -20,6 +23,7 @@
     margin-top: 2rem;
 }
 
+/* styling the text */
 .presentation-card span {
     color: var(--button-color);
     font-size: 28px;
@@ -27,6 +31,7 @@
     letter-spacing: 7px;
 }
 
+/* styling the container */
 .presentation-card {
     background: #ffffff65;
     border-radius: 10px;
@@ -40,6 +45,8 @@
     -moz-box-shadow: 12px 15px 7px -2px rgba(172,197,235,0.48);
 }
 
+/* set the container for the presentation text and the button as flexbox
+    in order to display them in column */
 .card-wrapper {
     display: flex;
     flex-direction: column;
@@ -50,6 +57,7 @@
     margin-top: 1rem;
 }
 
+/* styling the photo ID */
 .photo-id img {
     width:160px;
     height: 160px;
@@ -58,6 +66,7 @@
     box-shadow: var(--deep-shadow);
 }
 
+/* styling the "learn more button" */
 .presentation-body button {
     background: var(--button-color);
     width: 130px;
@@ -74,6 +83,7 @@
     -moz-box-shadow: 12px 15px 7px -2px rgba(172,197,235,0.48);
 }
 
+/* button hover animation */
 .presentation-body button:hover {
     background: #ffffff65;
     color: var(--button-color);
@@ -81,7 +91,10 @@
     
 }
 
+/* media query for desktop */
 @media screen and (width > 768px) {
+
+    /* photo-id and image displayed side by side */
     .presentation-main {
         flex-direction: row;
         justify-content: center;
@@ -96,6 +109,7 @@
         height: 220px;
     }
 
+    /* displaying the text container and the image as flex-start */
     .presentation-body {
         align-items: flex-start;
         padding-top: 6rem;
@@ -114,7 +128,9 @@
     }
 }
 
+/* media query for tablet */
 @media screen and (min-width: 600px) and (max-width: 768px) {
+
     .presentation-body {
         width: 70dvw;
         border-radius: 10px;

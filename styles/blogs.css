@@ -2,6 +2,7 @@
     box-sizing: border-box; 
 }
 
+/* styling the blog posts text */
 .blog-posts {
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@
     
 }
 
+/* main container (it contains all the cards) set as flexbox and displaying them in column*/
 .cards-container {
     display: flex;
     flex-direction: column;
@@ -39,7 +41,7 @@
     width: 220px;
     height: 350px;
     border-radius: 20px;
-    overflow: hidden;           /* any element exceeding the card div will be hidden 
+    overflow: hidden;           /* any element exceeding the card container will be hidden 
                                 in this case it's the card-body*/
     border: 5px solid black;
     position:relative;
@@ -55,6 +57,7 @@
     border-radius: 15px;
 }
 
+/* creating an hidden card that is placed next to the card itself */
 .card-body {
     width: 100%;        /* giving height and width 100% it will cover the whole card div */
     height: 100%;
@@ -64,22 +67,23 @@
                         but it can't be seen because of the property overflow: hidden; */ 
     border-radius: 15px;
     background: #1f3d4718;    /* set the transaparency */
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); /* set the blur filter */
     color: #fff;
     padding: 1.5rem;
     padding-top: 0;
     margin-top: 0;
-    display: flex;
+    display: flex;          /* card body elements placed in column and centered it */
     flex-direction: column;
     justify-content: center;
     transition: 1s;     /* it sets the transition time for the card:hover */
 }
 
-.card:hover .card-body{     /* setting the hover for the main card div but modifying the card.body */
+.card:hover .card-body{     /* setting the hover for the main card container but modifying the card.body */
     right: 0;              /*  it overlays the card-body (title, date and description) on top of the card image  */
     cursor: pointer;
 }
 
+/* styling the card title text */
 .card-title {
     color: #fff;
     font-size: 23px;
@@ -88,6 +92,7 @@
     margin: 0;
 }
 
+/* styling the card date text */
 .card-date {
     color: #fff;
     font-size: 14px;
@@ -95,6 +100,7 @@
     margin-top: 0.5rem;
 }
 
+/* styling the card description text */
 .card-description {
     color: #fff;
     font-size: 17px;
@@ -102,7 +108,8 @@
     margin: 0.5rem 0;
 }
 
-.card-btn {         /* styling the button */
+/* styling the button */
+.card-btn {         
     color: #fff;
     font-size: 15px;
     font-weight: bold;
@@ -114,6 +121,7 @@
     cursor: pointer;
 }
 
+/* styling the blog text */
 .blog-introduction {
     background: var(--background-color);
     border-radius: 20px;
@@ -127,12 +135,13 @@
     box-shadow: var(--shadow);
 }
 
-
+/* media query for desktop */
 @media screen and (width > 768px) {
     main {
         padding-top: 0;
     }
 
+    /* cards container displayed in row */
     .cards-container {
         flex-direction: row;
         justify-content: space-around;
@@ -141,6 +150,7 @@
     }
 }
 
+/* media query for tablets */
 @media screen and (min-width: 600px) and (max-width: 768px) {
     .cards-container {
         flex-direction: row;

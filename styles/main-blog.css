@@ -3,13 +3,14 @@
 }
 
 
+/* main container set as flexbox column displayed */
 .blog-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 }
-
+/* styling the blog text */
 .blog-topic {
     background: var(--background-color);
     border-radius: 20px;
@@ -29,12 +30,14 @@
     object-fit: cover;
 }
 
+/* images container set as flexbox */
 .blog-img {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* styling the image and img-caption container */
 .img-wrapper {
     background: var(--background-color);
     border-radius: 20px;
@@ -44,6 +47,7 @@
     box-shadow: var(--shadow);
 }
 
+/* styling the img caption*/
 figcaption {
     text-align: center;
     margin-top: 1rem;
@@ -52,6 +56,7 @@ figcaption {
     font-style: italic;
 }
 
+/* arrows icons container set as flexbox so the arrow are displayed one to each side by the space aroun value */
 .arrows-wrap {
     display: flex;
     justify-content: space-around;
@@ -59,6 +64,7 @@ figcaption {
     margin-top: 1rem;
 }
 
+/* styling the arrows icons */
 .arrow i {
     font-size: 25px;
     color: black;
@@ -74,6 +80,7 @@ figcaption {
     margin-top: 0;
 }
 
+/* styling the icon so it looks disabled */
 #arrow-disabled a {
     pointer-events: none;
     color: darkgray;
@@ -87,8 +94,10 @@ figcaption {
     cursor: default;
 }
 
-
+/* media query for desktop */
 @media screen and (width > 768px) {
+
+    /* displaying the images in row */
     .blog-img {
         flex-direction: row;
         flex-wrap: wrap;
@@ -112,6 +121,8 @@ figcaption {
         margin: 0 4rem 0 4rem;
     }
 }
+
+/* media query for tablets */
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
     .blog-img {
