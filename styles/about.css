@@ -48,8 +48,16 @@
     border: none;
     cursor: pointer;
     color: #fff;
-    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    /* box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff; */
+    box-shadow: var(--deep-shadow);
     transition: 0.5s;
+}
+
+
+.resume button:hover{
+    background: #fff;
+    color: var(--foreground-color);
+    box-shadow: var(--button-shadow);
 }
 
 .resume p {
@@ -74,12 +82,6 @@
 
 .link a {
     text-decoration: none;
-}
-
-.resume button:hover{
-    background: #fff;
-    color: var(--foreground-color);
-    box-shadow: var(--deep-shadow);
 }
 
 @media screen and (width > 768px) {

@@ -43,7 +43,6 @@ form textarea {
     resize: none;
 }
 
-
 .submit-button {
     height: 60px;
     padding: 1rem;
@@ -54,14 +53,16 @@ form textarea {
     border: none;
     cursor: pointer;
     color: #fff;
+    text-decoration: none;
     background: var(--foreground-color);
     transition: 0.5s;
+    box-shadow: var(--deep-shadow);
 }
 
 .submit-button:hover {
     background: #fff;
     color: var(--foreground-color);
-    box-shadow: var(--deep-shadow);
+    box-shadow: var(--button-shadow);
 }
 
 
