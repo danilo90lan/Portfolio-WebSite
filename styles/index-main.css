@@ -24,7 +24,7 @@
 }
 
 /* styling the text */
-.presentation-card span {
+.presentation-card p:nth-child(2) {
     color: var(--button-color);
     font-size: 28px;
     font-weight: bolder;
