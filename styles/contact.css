@@ -54,7 +54,7 @@ form textarea {
     cursor: pointer;
     color: #fff;
     text-decoration: none;
-    background: var(--foreground-color);
+    background: var(--button-color);
     transition: 0.5s;
     box-shadow: var(--deep-shadow);
 }
