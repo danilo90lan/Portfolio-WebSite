@@ -17,7 +17,7 @@ The purpose of my Portfolio's website is to help illustrate my skills, abilities
 I built my own website using HTML and CSS for styling. I used Flexbox to create the layout of each page, ensuring that each component is displayed correctly on the screen. Additionally, I considered responsiveness for multiple users, creating different layouts for mobile, tablet, and desktop to optimize the user experience. 
 My website is made of:
 
-#### Header
+### Header
 
 The header includes the website's logo, the full name, and the navigation bar, which contains links to the main pages of the website, such as Home, About, Blogs, and Contact. It's placed at the top for the mobile and tablet views, but for the desktop view, I placed it on the left side to allow the main section to take up the rest of the screen.
 
@@ -36,7 +36,7 @@ The logo is at the left, name at the right and the nav bar at the bottom
 For the desktop view, I used a column layout to display each element of the header, stacking them one on top of the other.
 ![Header - desktop view](./docs/images/header_desktop.png)
 
-##### Footer
+### Footer
 
 The footer is placed at the bottom of the page and includes essential information like the phone number, address, and social media details. The footer is consistent across all viewports, except for the desktop view where the social media icons are displayed on the left and the personal information is on the right.
 
@@ -83,7 +83,7 @@ The Blogs page display five different blog posts. When you open one, it links di
 
 To build my portfolio website, I opted for a simple yet captivating look that also appears clean and professional. I chose a blue color scheme for the header and footer, with a light grey background to provide contrast and ensuring that the content remains visually engaging. Regarding the Typography I used the "Lato" and "Roboto" fonts pairing together in order to give a sharp and professional look.
 
-* #### Home page
+* ### Home page
 
 ###### Home page - mobile
 ![home - mobile](./docs/wireframes/home-mobile.png)
@@ -105,7 +105,7 @@ To build my portfolio website, I opted for a simple yet captivating look that al
 ###### About page - desktop
 ![about - desktop](./docs/wireframes/about-desktop.png)
 
-* #### Blogs page
+* ### Blogs page
 
 ###### Blogs page - mobile
 ![blogs - mobile](./docs/wireframes/blogs-mobile.png)
@@ -116,7 +116,7 @@ To build my portfolio website, I opted for a simple yet captivating look that al
 ###### Blogs page - desktop
 ![blogs - desktop](./docs/wireframes/blogs-desktop.png)
 
-* #### Contact page 
+* ### Contact page 
 
 ###### Contact page - mobile
 ![contact page - mobile](./docs/wireframes/contact-mobile.png)
@@ -127,7 +127,7 @@ To build my portfolio website, I opted for a simple yet captivating look that al
 ###### Contact page - desktop
 ![contact page - desktop](./docs/wireframes/contact-desktop.png)
 
-* #### Main blog page
+* ### Main blog page
 
 ###### Main blog - mobile
 ![main blog - mobile](./docs/wireframes/main_blog-mobile.png)
