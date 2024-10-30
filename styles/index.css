@@ -46,10 +46,6 @@ header {
     transition: ease-in 0.3s;
 }
 
-/* animation for the logo:hover*/
-.logo:hover {
-    transform: scale(1.05);
-}
 
 /* flexbox that display the logo and the title name in column */
 .logo-text {
@@ -189,23 +185,20 @@ footer {
 /* media query for desktop */
 
  @media screen and (width > 768px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 1rem; /* Add padding to the left and right for better spacing */
+    }
     
-    .main-box {     /* use flexbox in column direction to stack the header, main and footer */
-        display: flex;
-        flex-direction: column; /* footer is always at the bottom with the column layout */
-        height: 100dvh;  /* it takes 100% of the viewport height (Dynamic) */
-        width: 100dvw;    /* the main and the header takes the 100% of the viewport width */
+    /* styling the nav bar links */
+    nav a {
+        font-size: 25px;
     }
-
-    .contents {     /* the contents dive set to flexbox in order to display the header and the main side by side */
-        display: flex;
-        flex: 1;    /* takes up to the available space */
-    }
-
 
     .logo {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
         margin: 0;
     }
 
@@ -214,39 +207,13 @@ footer {
     }
 
     .main-title {
-        letter-spacing: 5px;
+        letter-spacing: 25px;
     }
 
     .cover-photo {
-        height: 250px;
+        height: 230px;
     }
 
-    /* setting the header flex-start so the logo, name and nav bar are displayd at the start of the header*/
-    header {
-        color: #ffffff;
-        padding: 1rem;
-        justify-content: flex-start;
-        width: 20rem;
-        align-items: center; /* Center the title name horizontally */
-    }
-
-    /* styling the nav bar in order to space each link */
-    nav {
-        margin: 0;
-        flex-direction: column;
-        margin-top: 1rem;
-        justify-content: space-around;
-        gap: 3rem;
-    }
-
-    nav a {
-        font-size: 22px;
-    }
-
-    main {
-        flex: 1;    /* the main is set to flex:1 so it can take all the available space in horizontal */ 
-    }
-    
     footer {            
         margin: 0;  /* set the margin back to 0 */
     }
@@ -269,19 +236,19 @@ footer {
         top: 0;
         padding: 5px 8px;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
     }
     
     /* the icon move up by 40px creating a pop up effect */
     .social-media .icon:hover .pop-up {
-        top: -40px;
+        top: -20px;
     }
 
     .information {
         display: flex;
         justify-content: space-between;
     }
- }
+}
 
 /* media query for tablets */
 
@@ -305,4 +272,4 @@ footer {
     .main-title {
         margin-top: 2rem;
     }
- }
+}
