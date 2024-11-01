@@ -185,6 +185,12 @@ footer {
 /* media query for desktop */
 
  @media screen and (width > 768px) {
+    .logo-text {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2rem 0 2rem;
+    }
+
     nav {
         display: flex;
         justify-content: space-around;
@@ -254,7 +260,7 @@ footer {
 
  @media screen and (min-width: 600px) and (max-width: 768px) {
     
-    /* disoplaying the logo at the left and the title name at the right */
+    /* displaying the logo at the left and the title name at the right */
     .logo-text {
         flex-direction: row;
         justify-content: space-between;
