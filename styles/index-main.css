@@ -80,6 +80,7 @@
     border: 2px solid black;
     outline: none;
     cursor: pointer;
+    box-shadow: var(--shadow);
     transition: 0.3s ease-in;
 }
 

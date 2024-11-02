@@ -5,10 +5,8 @@
   /* styling the main container */
 .about-main {
     background: var(--background-color);
-    margin: 2rem;
     padding: 1rem;
     padding-bottom: 2rem;
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +29,7 @@
 
 /* styling the resume box */
 .resume {
-    background-color: #fff;
+    background-color: white;
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
@@ -42,20 +40,17 @@
 
 /* styling the resume button */
 .resume button {
-    width: 180px;
-    height: 60px;
-    border-radius: 20px;
-    background: var(--button-color);
-    margin: 0px 12px;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 25px;
+    color: var(--button-color);
+    background: white;
+    border: 2px solid black;
     outline: none;
-    border: none;
     cursor: pointer;
-    color: #fff;
-    box-shadow: var(--deep-shadow);
-    transition: 0.5s;
+    transition: 0.3s ease-in;
+    box-shadow: var(--shadow);
 }
 
 /* resume button animation hover */
@@ -69,18 +64,6 @@
     font-size: 20px;
 }
 
-/* styling the text inside the blog link container */
-#blog-link {
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    background: #fff;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    box-shadow: var(--shadow);
-}
 
 .link {
     margin-top: 1rem;
@@ -99,15 +82,19 @@
 
 /* media query for desktop */
 @media screen and (width > 768px) {
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
     /* dislaying the containers in row*/
     .about-main {
-        flex-direction: row;
-        justify-content: center;
         gap: 4rem;
-        padding: 2rem;
-        margin-top: 3rem;
-        margin-right: 6rem;
-        margin-left: 6rem;
-        margin-bottom: 3rem;
+        width: 60dvw;
+        border-radius: 30px;
+        margin: 3rem;
+        margin-bottom: 7rem;
+        padding: 3rem;
     }
 }
