@@ -6,6 +6,7 @@
     <title>Danilo's Portfolio</title>
     <link rel = "stylesheet" type = " text/css" href = "./styles/index.css">
     <link rel = "stylesheet" type = " text/css" href = "./styles/index-main.css">
+
     
     <!-- setting the icon -->
     <link rel = "icon" href = "../images/logo.jpg">
@@ -38,32 +39,39 @@
             
                 <main> 
 
-                    <!-- This empty div  will have a background-img property set in the .css stylesheet
-                    with other properties to resize and position the img -->
-                    <div class = "cover-photo"></div>     
+    
                         
                     <!-- main container -->
-                    <div class = "presentation-main">
+                    <section class = "home">
+                        <div class = "container">
+                            <div class = "home-info">
+                                <div class = "left">
+                                    <h3>Hello, I'm</h3>
+                                <div class = "name">
+                                    <h1>Danilo</h1>
+                                    <h1>Lannocca</h1>
+                                </div>
+                                    
+                                    <h4>
+                                        And I'm a <br>
+                                        <span class = "multiple"></span>
+                                    </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam consequatur fugiat totam porro magnam beatae qui, nisi aut error placeat, sapiente dolor officia minus sed pariatur provident voluptates tenetur!
+                                    </p>
+                                    <div class = "btn">
+                                        <a href = "../documents/resume.pdf" target = "_blank"><button value = "btn">Download Resume</button></a>
+                                    </div>
+                                </div>
+                                <div class = "right">
+                                    <div class = "profile">
+                                        <img src = "./images/photoID.png" alt = "photo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            <figure class = "photo-id">
-                                <img src="./images/photoID.png" alt = "ID photo">
-                            </figure>
-                            
-                            <section class = "presentation-body"> 
-
-                                    <!-- this section contains the presentation card and the button --> 
-                                    <section class = "card-wrapper">   
-                                        <section class = "presentation-card">    
-                                            <h2>
-                                                <p>Hi, I'm</p> <p>Danilo</p>
-                                                <p>Web Developer</p> 
-                                            </h2>  
-
-                                    </section>
-                                        <h3><a href = "./pages/about.html"><button value = "Learn more">Learn more</button></a></h3>            
-                                    </section>           
-                            </section>
-                    </div>
+                    </section>
                 </main>
 
         </div>
@@ -103,5 +111,8 @@
             </section>
         </footer>
     </div>
+
+    <script src = "http://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src = ./scripts/main.js></script>
 </body>
 </html>
