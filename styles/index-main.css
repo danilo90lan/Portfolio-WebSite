@@ -52,10 +52,10 @@
 }
 
 .left p {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 25px;
-    color:var(--button-color);
+    color: black;
     mask-border: 50px;
     margin: 15px;
     text-align: center;
@@ -146,13 +146,6 @@
     }
     
     .left p {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 25px;
-        color: black;
-        mask-border: 50px;
-        margin-bottom: 15px;
-        margin-left: 0;
         text-align: right;
         width: 30rem;
     }
