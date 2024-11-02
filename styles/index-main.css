@@ -168,8 +168,8 @@
 .home .home-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0rem 5rem 0rem 5rem;
+    justify-content: space-around;
+    padding: 0rem 6rem 0rem 6rem;
 }
 
 .right .profile img {
