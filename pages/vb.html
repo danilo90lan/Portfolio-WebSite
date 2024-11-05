@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danilo's Portfolio</title>
     <link rel = "stylesheet" type = " text/css" href = "../styles/index.css">
-    <link rel = "stylesheet" type = " text/css" href = "../styles/main-blog.css">
+    <link rel = "stylesheet" type = " text/css" href = "../styles/projects.css">
 
     <link rel = "icon" href = "../images/logo.jpg">
     <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> 
@@ -27,7 +27,7 @@
                     <nav>
                         <a href = "../index.html">Home</a>
                         <a href = "./about.html">About</a>
-                        <a href = "./blogs.html">Blogs</a>
+                        <a href = "./skills.html">Tech Skills & Projects</a>
                     </nav>
             
 
@@ -39,20 +39,58 @@
                     with other properties to resize and position the img -->
                 <div class = "cover-photo">  </div>   
                 
-                <div class = "main-topic"><h1>Python</h1></div>
+                <div class = "main-topic"><h1>VB.NET</h1></div>
+
+                    <div class = blog-topic-wrapper>
+                        <article class = "blog-introduction">
+                            <p>As a passionate Python developer, I have created several backend applications that demonstrate my ability to build robust and efficient systems. 
+                                My projects focus on practical solutions to real-world problems, emphasizing user experience, security, and performance.
+                            </p>   
+                        </article>
+                    </div>
+                        
 
                     <div class = "blog-wrapper">
                         <article class = "blog-topic">
-                            <p>As a passionate Python developer, I have created several backend applications that demonstrate my ability to build robust and efficient systems. 
-                                My projects focus on practical solutions to real-world problems, emphasizing user experience, security, and performance.
-                            
-                            </p>   
+                            <div class = title>File Transfer Application</div>
+                            The File Transfer Application is a simple client-server application developed in VB.NET that enables users to send and receive files over a network using TCP sockets. Utilizing the Winsock2005DLL for handling network connections and file transfers, this application features a user-friendly graphical interface to streamline the file transfer process.
+                            <p>This project was developed during my internship in Italy, where I gained valuable hands-on experience with network programming and client-server architecture.</p>
+                            <p>The application consists of two main components: the Sender and the Receiver. Users can set up either role to initiate or accept file transfers, making it flexible for various networking scenarios.</p>
+                            Features:
+                            <ul>
+                                    <li><b>Send Files:</b> Users can browse and select files to send to a specified IP address and port.</li>
+                                    <li><b>Receive Files:</b> The application can listen for incoming file transfers on a designated port.</li>
+                                    <li><b>Progress Bar:</b> Users are provided with a visual indication of the file transfer progress, enhancing user experience.</li>
+                                    <li><b>Error Handling:</b> The application includes mechanisms for error handling to ensure robust file transfer processes.</li>
+                            </ul>
+                                Code Structure:
+                                
+                                <ul>
+                                    <li><b>Main Form (Form1):</b>The main interface of the application, containing controls for sending and receiving files.</li>
+                                    <li><b>Winsock Controls:</b> Listens for incoming connections and manages received data and connects to the server for sending data.</li>
+                                </ul>
+                                
+                                Event Handlers:
+                                <ul>
+                                    <li>Initializes the server to listen for incoming connections on the specified port.</li>
+                                    <li>Connects the client to the specified server IP address and port.</li>
+                                    <li>Opens a file dialog for users to select files for sending.</li>
+                                    <li>Sends the selected file to the connected server.</li>
+                                    <li>Accepts incoming connection requests from clients.</li>
+                                    <li>Processes incoming data and files.</li>
+                                    <li>Updates the progress bar to reflect the current transfer status.</li>
+                                </ul>
+                                                      
+                                
+                            <p><a class = "repo" href = "https://github.com/danilo90lan/LAN_FileTransfer">View GitHub Repository</a></p>
+                           
                         </article>
+                    </div>
                         
 
                     <div class = "arrows-wrap">
                         <div class = "arrow">
-                            <a href = "./blog-cpp.html""><i class="fa-solid fa-arrow-left"></i><p>Previous</p></a></div>
+                            <a href = "./python.html""><i class="fa-solid fa-arrow-left"></i><p>Previous</p></a></div>
                         
                             <div class = "arrow" id = "arrow-disabled">
                             <a href = "#"><i class="fa-solid fa-arrow-right"></i><p>Next</p></a></div>          
