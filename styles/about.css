@@ -14,17 +14,18 @@
 } 
 
 /* flexbox container displaying in column */
-.interests {
+.interests  {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    text-align: justify;
+    
 }
 
 .interests p {
     font-family: "Roboto",sans-serif;
     font-size: 18px;
+    text-align: justify;
 }
 
 /* styling the resume box */
