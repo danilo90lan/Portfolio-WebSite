@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danilo's Portfolio</title>
+    <link rel = "stylesheet" type = " text/css" href = "../styles/index.css">
+    <link rel = "stylesheet" type = " text/css" href = "../styles/contact.css">
+ 
+    <link rel = "icon" href = "../images/logo.jpg">
+    
+    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "uS8ZTk2brzD6VjN9n",
+            });
+        })();
+    </script>
+</head>
+<body>
+
+    <div class =  "main-box">   <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
+        <div class = "contents">    <!-- the content div contains header and main -->
+            <header>
+                <div class = "logo-text">
+                        <a href = "../index.html">
+                            <img src = "../images/logo.jpg" alt = "Portfolio logo" class = "logo">
+                        </a>
+              
+                        <div class = "main-title"><p class = "name">Danilo Lannocca</p></div>
+                    
+                </div>
+                
+                    <nav>
+                        <a href = "../index.html">Home</a>
+                        <a href = "./about.html">About</a>
+                        <a href = "./skills.html">Tech Stack</a>
+                        <a href = "#">Contact</a>
+                    </nav>
+            
+
+            </header>
+
+            <main>
+                <!-- This div  will have a background-img property in thge .css stylesheet
+                with other properties to resize and position the img -->
+                <div class = "cover-photo"></div>     
+                
+
+                <div class = "main-topic"><H1>Contact Form</H1></div>
+
+                <!-- main container -->
+                    <section class = "wrapper">
+
+                        <!-- this section contain the form and the submit button -->
+                                <section class = "form-wrap">
+                                        <form id = "contact-form">
+                                                    <input type = "text" name = "name" id = "name" placeholder = "Name"">
+                                            
+                                                
+                                                    <input type = "email" name = "email" id = "email" placeholder = "e-mail">
+                                            
+                                                
+                                                    <input type = "number" name = "phone" id = "phone" placeholder = "Phone">
+                                            
+                                            
+                                                    <textarea name = "message" id = "message" placeholder = "Write your message"></textarea>
+
+                                                <center><button type = "submit" value = "Send message" class = "submit-button">Send message</button></center>
+                                                    
+                                        </form>
+                                    
+                                    
+                                </section>
+                    </section>
+            </main>
+        </div>
+
+        
+        <footer>
+            <section class = "information">
+
+                <address class = "social-media">
+                    <li class = "icon"><a href = "https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target = "_blank" class = "pop-up">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a></li>
+                    <li class = "icon"><a href = "https://www.facebook.com/profile.php?id=100008238969482" target = "_blank" class = "pop-up">
+                        <i class="fa-brands fa-facebook"></i>
+                        </a></li>
+                        <li class = "icon"><a href = "https://github.com/danilo90lan?tab=repositories" target = "_blank" class = "pop-up">
+                            <i class="fa-brands fa-github"></i>
+                        </a></li>        
+                </address>
+    
+                <section class = "info">       
+
+                    <address><span><i class="fa-solid fa-phone"></i></span>
+                        <span>0401683091</span>
+                    </address>
+
+                    <address><span><i class="fa-solid fa-at"></i></span>
+                        <span>danilo.lann@gmail.com</span>
+                    </address>
+            
+                    <address><span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Melbourne, VIC, AU</span>
+                    </address>
+
+                </section>
+
+            </section>
+        </footer>
+    </div>
+    <script src = "../scripts/form.js"></script>
+</body>
+</html>
