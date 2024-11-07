@@ -143,6 +143,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 4rem;
+        margin-bottom: 7rem;
     }
 
     .blog-wrapper {

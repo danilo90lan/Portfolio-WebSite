@@ -191,13 +191,14 @@ footer {
 
     nav {
         display: flex;
-        justify-content: space-around;
-        padding: 0 1rem; /* Add padding to the left and right for better spacing */
+        justify-content: flex-end;
+        gap: 3rem;
+        padding: 0 2rem; /* Add padding to the left and right for better spacing */
     }
     
     /* styling the nav bar links */
     nav a {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .logo {
@@ -212,6 +213,7 @@ footer {
 
     .main-title {
         letter-spacing: 29px;
+        margin-top: 1.5rem;
     }
 
     .cover-photo {
