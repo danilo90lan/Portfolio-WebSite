@@ -141,6 +141,9 @@
         margin: 0 2rem 2rem 2rem;
     }
 
+    /* #arrows-top {
+        display: none;
+    } */
 
     .arrows-wrap {
         justify-content: space-between;
