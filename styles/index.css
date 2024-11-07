@@ -178,7 +178,7 @@ nav {
     position: fixed;
     right: -60dvw; /* Initially hide off-screen */
     width: 60dvw;
-    height: 100dvh;
+    height: 100%;
     background-color: var(--background-transparency);
     transition: right 0.3s ease; /* Smooth transition */
 }
