@@ -18,12 +18,12 @@ window.onload = function() {
             .then(() => {
                 console.log('SUCCESS!');
                 alert("Message sent succesfully!")
+                // Clear the form fields after submission
+                this.reset();
             }, (error) => {
                 console.log('FAILED...', error);
                 alert("Failed to send the message. Please try again.")
             });
             
-            // Clear the form fields after submission
-            this.reset();
     });
 }

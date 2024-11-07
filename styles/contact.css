@@ -46,6 +46,10 @@ form textarea {
     resize: none;
 }
 
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
 
 /* styling th submit button */
 .submit-button {
