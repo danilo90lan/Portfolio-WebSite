@@ -8,6 +8,7 @@
     --background-color:whitesmoke;
     /* --background-color-secondary: hsla(211, 82%, 13%, 0.925); */
     --background-color-secondary: hsl(211, 82%, 13%);
+    --background-transparency: hsla(211, 82%, 13%, 0.726);
     --button-color: #B20000;
     --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     --deep-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -82,25 +83,11 @@ nav a {
     border-radius: 22px;
 }
 
-/* creating an underline animation when hover the nav link */
 
-/* create a pseudo element after the element */
-nav a::after {
-    content: "";        /* giving an empty content in order for the pseudo element to be created*/
-    display: block;    
-    height: 3px;        /* create ana element of 3px height, the width is the same width of the <a> element */
-    background-color: #fff;
-    transform: scale(0);        /* scale(0) resize the new pseudo element to 0 creating an hiding effect*/
-    transition: 0.3s all ease-in-out;   /* setting the transition time */
-    transform-origin: left;   /* starting point of the animation */
+#toggleButton {
+    display: none;
 }
 
-/* hovering the link*/
-nav a:hover::after {
-    transform: scale(1);        /* scale(1) make the pseudo element be visible 
-                                    again with a sliding effect*/
-
-}
 
 /* styling the footer */
 footer {
@@ -180,6 +167,65 @@ footer {
     height: 100px;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    /* Navigation styles */
+nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    position: fixed;
+    right: -60dvw; /* Initially hide off-screen */
+    width: 60dvw;
+    height: 100dvh;
+    background-color: var(--background-transparency);
+    transition: right 0.3s ease; /* Smooth transition */
+}
+
+/* When nav has the 'active' class, slide it in */
+nav.active {
+    right: 0; /* Slide in */
+}
+
+/* Style the toggle button */
+button.toggle {
+    color: #fff;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001; /* Make sure the button is above the nav */
+}
+
+#toggleButton {
+    display: block;
+}
+
+
+/* When the button is active, change the hamburger icon to an X */
+button.toggle .fa-bars {
+    font-size: 30px; /* Adjust the size of the hamburger icon */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+button.toggle.active .fa-bars {
+    transform: rotate(90deg); /* Rotate the hamburger to an "X" */
+}
+
+button.toggle.active .fa-bars::before {
+    content: '\f00d'; /* Change to the "X" icon from Font Awesome */
+    transform: rotate(90deg); /* Rotate the "X" icon */
+}
+
+}
+
+
+
+
 /* media query for desktop */
 
  @media screen and (width > 768px) {
@@ -200,6 +246,26 @@ footer {
     nav a {
         font-size: 22px;
     }
+
+    /* creating an underline animation when hover the nav link */
+
+    /* create a pseudo element after the element */
+    nav a::after {
+        content: "";        /* giving an empty content in order for the pseudo element to be created*/
+        display: block;    
+        height: 3px;        /* create ana element of 3px height, the width is the same width of the <a> element */
+        background-color: #fff;
+        transform: scale(0);        /* scale(0) resize the new pseudo element to 0 creating an hiding effect*/
+        transition: 0.3s all ease-in-out;   /* setting the transition time */
+        transform-origin: left;   /* starting point of the animation */
+    }
+
+    /* hovering the link*/
+    nav a:hover::after {
+        transform: scale(1);        /* scale(1) make the pseudo element be visible 
+                                        again with a sliding effect*/
+    }
+
 
     .logo {
         width: 150px;
@@ -255,6 +321,7 @@ footer {
         justify-content: space-between;
     }
 }
+
 
 /* media query for tablets */
 
