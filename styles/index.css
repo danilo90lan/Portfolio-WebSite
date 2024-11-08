@@ -6,9 +6,8 @@
     box-sizing: border-box; 
     font-family: Arial, sans-serif;
     --background-color:whitesmoke;
-    /* --background-color-secondary: hsla(211, 82%, 13%, 0.925); */
     --background-color-secondary: hsl(211, 82%, 13%);
-    --background-transparency: hsla(211, 82%, 13%, 0.920);
+    --background-transparency: hsla(211, 82%, 13%, 0.940);
     --button-color: #B20000;
     --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     --deep-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -79,19 +78,18 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     font-size: 17px;
-    padding: 0;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 3rem;
+    align-items: center;
+    padding-top: 4rem;
     gap: 1rem;
     position: fixed;
-    right: -60dvw; /* Initially hide off-screen */
-    width: 60dvw;
+    right: -60vw; /* Initially hide off-screen */
+    width: 60vw;
     height: 100vh;
     background-color: var(--background-transparency);
-    transition: right 0.3s ease; /* Smooth transition */
+    transition: right 0.3s ease;
     z-index: 1000;
-    overflow-y: auto;
 }
 
 /* When nav has the 'active' class, slide it in */
@@ -112,9 +110,9 @@ button.toggle {
     z-index: 1001; /* Make sure the button is above the nav */
 }
 
-#toggleButton {
+/* #toggleButton {
     display: block;
-}
+} */
 
 
 /* When the button is active, change the hamburger icon to an X */
@@ -232,12 +230,9 @@ footer {
 
     nav {
         justify-content: center;
-        align-items: center;
-        width: 20dvw;
-        height: auto;
-        gap: 3rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        width: 300px;
+        gap: 2rem;
+        padding: 3rem 0 2rem 0;
         border-radius: 20px;
     }
     
