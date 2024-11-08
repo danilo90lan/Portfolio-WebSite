@@ -8,7 +8,7 @@
     --background-color:whitesmoke;
     /* --background-color-secondary: hsla(211, 82%, 13%, 0.925); */
     --background-color-secondary: hsl(211, 82%, 13%);
-    --background-transparency: hsla(211, 82%, 13%, 0.900);
+    --background-transparency: hsla(211, 82%, 13%, 0.920);
     --button-color: #B20000;
     --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     --deep-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -32,7 +32,6 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 1rem;
 }
 
 /* styling the logo container */
@@ -64,19 +63,10 @@ header {
     margin-right: 10px;
 }
 
-/* nav bar is a flexbox displaying the nav link in row */
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 17px;
-    padding: 0;
-}
-
 /* styling the nav bar links */
 nav a {
     color:#fff;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: bold;
     text-decoration: none;
     padding: 8px 16px;
@@ -84,8 +74,62 @@ nav a {
 }
 
 
+  /* Navigation styles */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 17px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    gap: 1rem;
+    position: fixed;
+    right: -60dvw; /* Initially hide off-screen */
+    width: 60dvw;
+    height: 100vh;
+    background-color: var(--background-transparency);
+    transition: right 0.3s ease; /* Smooth transition */
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* When nav has the 'active' class, slide it in */
+nav.active {
+    right: 0; /* Slide in */
+}
+
+/* Style the toggle button */
+button.toggle {
+    color: #fff;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001; /* Make sure the button is above the nav */
+}
+
 #toggleButton {
-    display: none;
+    display: block;
+}
+
+
+/* When the button is active, change the hamburger icon to an X */
+button.toggle .fa-bars {
+    font-size: 30px; /* Adjust the size of the hamburger icon */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+button.toggle.active .fa-bars {
+    transform: rotate(90deg); /* Rotate the hamburger to an "X" */
+}
+
+button.toggle.active .fa-bars::before {
+    content: '\f00d'; /* Change to the "X" icon from Font Awesome */
+    transform: rotate(90deg); /* Rotate the "X" icon */
 }
 
 
@@ -169,66 +213,6 @@ footer {
 
 
 
-@media screen and (max-width: 768px) {
-    /* Navigation styles */
-nav {
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 3rem;
-    gap: 1rem;
-    position: fixed;
-    right: -60dvw; /* Initially hide off-screen */
-    width: 60dvw;
-    height: 100vh;
-    background-color: var(--background-transparency);
-    transition: right 0.3s ease; /* Smooth transition */
-    z-index: 1000;
-    overflow-y: auto;
-}
-
-/* When nav has the 'active' class, slide it in */
-nav.active {
-    right: 0; /* Slide in */
-}
-
-/* Style the toggle button */
-button.toggle {
-    color: #fff;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1001; /* Make sure the button is above the nav */
-}
-
-#toggleButton {
-    display: block;
-}
-
-
-/* When the button is active, change the hamburger icon to an X */
-button.toggle .fa-bars {
-    font-size: 30px; /* Adjust the size of the hamburger icon */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-button.toggle.active .fa-bars {
-    transform: rotate(90deg); /* Rotate the hamburger to an "X" */
-}
-
-button.toggle.active .fa-bars::before {
-    content: '\f00d'; /* Change to the "X" icon from Font Awesome */
-    transform: rotate(90deg); /* Rotate the "X" icon */
-}
-
-}
-
-
-
-
 /* media query for desktop */
 
  @media screen and (width > 768px) {
@@ -238,16 +222,28 @@ button.toggle.active .fa-bars::before {
         margin: 2rem 0 2rem;
     }
 
+    header {
+        height: 250px;
+    }
+
+    button.toggle {
+        right: 50px;
+    }
+
     nav {
-        display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
+        width: 20dvw;
+        height: auto;
         gap: 3rem;
-        padding: 0 2rem; /* Add padding to the left and right for better spacing */
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        border-radius: 20px;
     }
     
     /* styling the nav bar links */
     nav a {
-        font-size: 20px;
+        font-size: 20px;  
     }
 
     /* creating an underline animation when hover the nav link */
