@@ -8,7 +8,7 @@
     --background-color:whitesmoke;
     /* --background-color-secondary: hsla(211, 82%, 13%, 0.925); */
     --background-color-secondary: hsl(211, 82%, 13%);
-    --background-transparency: hsla(211, 82%, 13%, 0.726);
+    --background-transparency: hsla(211, 82%, 13%, 0.900);
     --button-color: #B20000;
     --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     --deep-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -173,8 +173,9 @@ footer {
     /* Navigation styles */
 nav {
     flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    gap: 1rem;
     position: fixed;
     right: -60dvw; /* Initially hide off-screen */
     width: 60dvw;
@@ -246,7 +247,7 @@ button.toggle.active .fa-bars::before {
     
     /* styling the nav bar links */
     nav a {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     /* creating an underline animation when hover the nav link */
