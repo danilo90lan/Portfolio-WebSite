@@ -332,12 +332,19 @@ footer {
 
     /* spacing the link in the nav bar */
     nav {
-        justify-content: space-between;
-        margin: 1rem;
-        margin-bottom: 0;
+        width: 50dvw;
+        gap: 3rem;
+    }
+
+    header {
+        height: 150px;
     }
 
     .main-title {
         margin-top: 2rem;
+    }
+
+    button.toggle {
+        top: 5px;
     }
 }

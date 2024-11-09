@@ -163,3 +163,10 @@
     }
 
 }
+
+/* media query for tablets */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .blog-topic {
+       margin: 2rem;
+    }
+}
