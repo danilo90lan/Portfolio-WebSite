@@ -340,6 +340,10 @@ footer {
         height: 150px;
     }
 
+    .name {
+        margin-top: 2rem;
+    }
+
     .main-title {
         margin-top: 2rem;
     }
