@@ -112,9 +112,6 @@
     align-items: center;
 }
 
-.profile {
-    text-align: center;
-}
 
 /* media query for desktop */
 @media screen and (width > 768px) {
