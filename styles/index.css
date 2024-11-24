@@ -97,6 +97,11 @@ nav.active {
     right: 0; /* Slide in */
 }
 
+nav a.active {
+    background-color: white;
+    color: var(--background-color-secondary);
+}
+
 /* Style the toggle button */
 button.toggle {
     color: #fff;
