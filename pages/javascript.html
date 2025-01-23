@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danilo Lannocca</title>
+    <link rel = "stylesheet" type = " text/css" href = "../styles/index.css">
+    <link rel = "stylesheet" type = " text/css" href = "../styles/projects.css">
+
+    <link rel = "icon" href = "../images/logo.jpg">
+    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <div class =  "main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
+        <div class = "contents"> <!-- the content div contains header and main -->
+            <header>
+                <div class = "logo-text">
+                        <a href = "../index.html">
+                            <img src = "../images/logo.jpg" alt = "Portfolio logo" class = "logo">
+                        </a>
+              
+                        <div class = "main-title"><p class = "name">Danilo Lannocca</p></div>
+                    
+                </div>
+                
+                <button class="toggle" id="toggleButton">
+                    <i class="fas fa-bars"></i>
+                </button>
+    
+                <nav class="nav-links" id="navLinks">
+                    <a href="../index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./skills.html">Skills</a>
+                    <a href="./python.html" class="active">Portfolio</a>
+                    <a href="./contact.html">Contact</a>
+                </nav>
+            
+
+            </header>
+
+            <main>
+                
+                <!-- This div  will have a background-img property in thge .css stylesheet
+                    with other properties to resize and position the img -->
+                <div class = "cover-photo">  </div>   
+                
+                <div class = "main-topic"><h1>Javascript / React</h1></div>
+
+                <div class = "arrows-wrap" id = "arrows-top">
+                    <div class = "arrow">
+                        <a href = "./vb.html""><i class="fa-solid fa-arrow-left"></i></a></div>
+                    
+                        <div class = "arrow" id = "arrow-disabled">
+                        <a href = "#"><i class="fa-solid fa-arrow-right"></i></a></div>          
+                </div>
+
+                    <div class = blog-topic-wrapper>
+                        <article class = "blog-introduction">
+                            <p>As a JavaScript developer, I have worked on building interactive and responsive web applications using React.
+                                My projects focus on creating user-friendly designs, writing clean and well-structured code, 
+                                and ensuring the applications are fast and reliable. 
+                                I enjoy turning ideas into functional web experiences and pay attention to details to make everything work smoothly.
+                            </p>   
+                        </article>
+                    </div>
+                        
+
+                    <div class = "blog-wrapper">
+                        <article class = "blog-topic">
+                            <div class = title>WeatherWise</div>
+                            <div class = title>Forecast Web Application</div>
+                            <p>WeatherWise is a modern weather application that provides real-time weather updates, and forecasts.</p>
+                            Features:
+                            <ul>
+                                    <li><b>Current Conditions:</b> Displays current temperature, humidity, wind speed, and weather conditions with intuitive icons.</li>
+                                    <li><b>Hourly Forecast:</b> Hour-by-hour forecast for the current day to help plan your day.</li>
+                                    <li><b>Daily Forecast:</b> 7-day forecast with high and low temperatures, precipitation chances, and condition icons.</li>
+                                    <li><b>Location Search:</b> Search and save your favorite locations for quick access.</li>
+                                    <li><b>Local Storage:</b> Saves cities locally without the need for a database.</li>
+                                    <li><b>Default Behavior:</b> Auto-detects location based on IP or precise location with permission.</li>
+                            </ul>
+                                Code Structure:
+                                <p><b>Glance Cards:</b></p>
+                                <ul>
+                                    <li>Weather icon</li>
+                                    <li>Location name and country</li>
+                                    <li>Weather condition (e.g., Partly Cloudy, Clear)</li>
+                                    <li>Temperature (Celsius)</li>
+                                </ul>
+                                
+                                <b>Event Handlers:</b>
+                                <ul>
+                                    <li>Location name</li>
+                                    <li>Weather condition with icon</li>
+                                    <li>Temperature</li>
+                                    <li>Feels like temperature</li>
+                                    <li>High & low temperatures</li>
+                                    <li>Hourly and future forecasts</li>
+                                    <li>Precipitation chance</li>
+                                    <li>Wind speed</li>
+                                    <li>Sunrise & sunset times</li>
+                                    <li>UV Index</li>
+                                    <li>Humidity & dew point</li>
+                                    <li>Pressure (inHg)</li>
+                                </ul>
+                                                      
+                                <div class = "repo"><a href = "https://github.com/danilo90lan/Forecast-react_app_API.git" target = "_blank"><button value = "btn">GitHub Repository</button></a></div>
+                           
+                        </article>
+                    </div>
+                        
+
+                    <div class = "arrows-wrap" id = "arrows-bottom">
+                        <div class = "arrow">
+                            <a href = "./vb.html""><i class="fa-solid fa-arrow-left"></i><p>Previous</p></a></div>
+                        
+                            <div class = "arrow" id = "arrow-disabled">
+                            <a href = "#"><i class="fa-solid fa-arrow-right"></i><p>Next</p></a></div>          
+                    </div>
+
+            </main>
+        </div>
+
+        <footer>
+            <section class = "information">
+
+                <address class = "social-media">
+                    <li class = "icon"><a href = "https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target = "_blank" class = "pop-up">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a></li>
+                    <li class = "icon"><a href = "https://www.facebook.com/profile.php?id=100008238969482" target = "_blank" class = "pop-up">
+                        <i class="fa-brands fa-facebook"></i>
+                        </a></li>
+                        <li class = "icon"><a href = "https://github.com/danilo90lan?tab=repositories" target = "_blank" class = "pop-up">
+                            <i class="fa-brands fa-github"></i>
+                        </a></li>        
+                </address>
+    
+                <section class = "info">       
+
+                    <address><span><i class="fa-solid fa-phone"></i></span>
+                        <span>0401683091</span>
+                    </address>
+
+                    <address><span><i class="fa-solid fa-at"></i></span>
+                        <span>danilo.lann@gmail.com</span>
+                    </address>
+            
+                    <address><span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Melbourne, VIC, AU</span>
+                    </address>
+
+                </section>
+
+            </section>
+        </footer>
+    </div>
+    <script src="../scripts/toggle.js"></script>
+</body>
+</html>
