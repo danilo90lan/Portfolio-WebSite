@@ -53,12 +53,14 @@
 .repo {
     display: flex;
     justify-content: center;
+
 }
 
 .repo button {
-    font-size: 15px;
-    font-weight: 600;
-    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 800;
+    margin: 0.5rem;
+    padding: 10px 20px;
     border-radius: 25px;
     color: var(--button-color);
     background: white;
