@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danilo Lannocca</title>
-    <link rel = "stylesheet" type = " text/css" href = "../styles/index.css">
-    <link rel = "stylesheet" type = " text/css" href = "../styles/projects.css">
+    <link rel="stylesheet" type=" text/css" href="../styles/index.css">
+    <link rel="stylesheet" type=" text/css" href="../styles/projects.css">
 
-    <link rel = "icon" href = "../images/logo.jpg">
-    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> 
+    <link rel="icon" href="../images/logo.jpg">
+    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <div class =  "main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
-        <div class = "contents"> <!-- the content div contains header and main -->
+    <div class="main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
+        <div class="contents"> <!-- the content div contains header and main -->
             <header>
-                <div class = "logo-text">
-                        <a href = "../index.html">
-                            <img src = "../images/logo.jpg" alt = "Portfolio logo" class = "logo">
-                        </a>
-              
-                        <div class = "main-title"><p class = "name">Danilo Lannocca</p></div>
-                    
+                <div class="logo-text">
+                    <a href="../index.html">
+                        <img src="../images/logo.jpg" alt="Portfolio logo" class="logo">
+                    </a>
+
+                    <div class="main-title">
+                        <p class="name">Danilo Lannocca</p>
+                    </div>
+
                 </div>
-                
+
                 <button class="toggle" id="toggleButton">
                     <i class="fas fa-bars"></i>
                 </button>
-    
+
                 <nav class="nav-links" id="navLinks">
                     <a href="../index.html">Home</a>
                     <a href="./about.html">About</a>
@@ -35,112 +39,185 @@
                     <a href="./python.html" class="active">Portfolio</a>
                     <a href="./contact.html">Contact</a>
                 </nav>
-            
+
 
             </header>
 
             <main>
-                
+
                 <!-- This div  will have a background-img property in thge .css stylesheet
                     with other properties to resize and position the img -->
-                <div class = "cover-photo">  </div>   
-                
-                <div class = "main-topic"><h1>Javascript / React</h1></div>
+                <div class="cover-photo"> </div>
 
-                <div class = "arrows-wrap" id = "arrows-top">
-                    <div class = "arrow">
-                        <a href = "./vb.html""><i class="fa-solid fa-arrow-left"></i></a></div>
-                    
-                        <div class = "arrow" id = "arrow-disabled">
-                        <a href = "#"><i class="fa-solid fa-arrow-right"></i></a></div>          
+                <div class="main-topic">
+                    <h1>Javascript / React</h1>
                 </div>
 
-                    <div class = blog-topic-wrapper>
-                        <article class = "blog-introduction">
-                            <p>As a JavaScript developer, I have worked on building interactive and responsive web applications using React.
-                                My projects focus on creating user-friendly designs, writing clean and well-structured code, 
-                                and ensuring the applications are fast and reliable. 
-                                I enjoy turning ideas into functional web experiences and pay attention to details to make everything work smoothly.
-                            </p>   
-                        </article>
+                <div class="arrows-wrap" id="arrows-top">
+                    <div class="arrow">
+                        <a href="./vb.html""><i class=" fa-solid fa-arrow-left"></i></a>
                     </div>
-                        
 
-                    <div class = "blog-wrapper">
-                        <article class = "blog-topic">
-                            <div class = title>WeatherWise</div>
-                            <div class = title>Forecast Web Application</div>
-                            <p>WeatherWise is a modern weather application that provides real-time weather updates, and forecasts.</p>
-                            Features:
-                            <ul>
-                                    <li><b>Current Conditions:</b> Displays current temperature, humidity, wind speed, and weather conditions with intuitive icons.</li>
-                                    <li><b>Hourly Forecast:</b> Hour-by-hour forecast for the current day to help plan your day.</li>
-                                    <li><b>Daily Forecast:</b> 7-day forecast with high and low temperatures, precipitation chances, and condition icons.</li>
-                                    <li><b>Location Search:</b> Search and save your favorite locations for quick access.</li>
-                                    <li><b>Local Storage:</b> Saves cities locally without the need for a database.</li>
-                                    <li><b>Default Behavior:</b> Auto-detects location based on IP or precise location with permission.</li>
-                            </ul>
-                                Code Structure:
-                                <p><b>Glance Cards:</b></p>
-                                <ul>
-                                    <li>Weather icon</li>
-                                    <li>Location name and country</li>
-                                    <li>Weather condition (e.g., Partly Cloudy, Clear)</li>
-                                    <li>Temperature (Celsius)</li>
-                                </ul>
-                                
-                                <b>Event Handlers:</b>
-                                <ul>
-                                    <li>Location name</li>
-                                    <li>Weather condition with icon</li>
-                                    <li>Temperature</li>
-                                    <li>Feels like temperature</li>
-                                    <li>High & low temperatures</li>
-                                    <li>Hourly and future forecasts</li>
-                                    <li>Precipitation chance</li>
-                                    <li>Wind speed</li>
-                                    <li>Sunrise & sunset times</li>
-                                    <li>UV Index</li>
-                                    <li>Humidity & dew point</li>
-                                    <li>Pressure (inHg)</li>
-                                </ul>
-                                                      
-                                <div class = "repo">
-                                    <a href = "https://weather-wizards.netlify.app/" target = "_blank"><button value = "btn">Web App</button></a>
-                                    <a href = "https://github.com/danilo90lan/Forecast-react_app_API.git" target = "_blank"><button value = "btn">GitHub Repo</button></a>
-                                </div>
-                           
-                        </article>
+                    <div class="arrow" id="arrow-disabled">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                        
+                </div>
 
-                    <div class = "arrows-wrap" id = "arrows-bottom">
-                        <div class = "arrow">
-                            <a href = "./vb.html""><i class="fa-solid fa-arrow-left"></i><p>Previous</p></a></div>
-                        
-                            <div class = "arrow" id = "arrow-disabled">
-                            <a href = "#"><i class="fa-solid fa-arrow-right"></i><p>Next</p></a></div>          
+                <div class=blog-topic-wrapper>
+                    <article class="blog-introduction">
+                        <p>As a JavaScript developer, I have worked on building interactive and responsive web
+                            applications using React.
+                            My projects focus on creating user-friendly designs, writing clean and well-structured code,
+                            and ensuring the applications are fast and reliable.
+                            I enjoy turning ideas into functional web experiences and pay attention to details to make
+                            everything work smoothly.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="blog-wrapper">
+                    <article class="blog-topic">
+                        <div class="title">Merry Berry</div>
+                        <div class="title">Smoothie E-Commerce Web App</div>
+                        <p>Merry Berry is a full-stack smoothie ordering platform where users can build custom
+                            smoothies, browse options with smart filters, and securely checkout using Stripe.</p>
+                        Features:
+                        <ul>
+                            <li><b>Custom Smoothie Builder:</b> Users can select base liquids, fruits, add-ons, and
+                                toppings to create their perfect blend.</li>
+                            <li><b>Product Filtering:</b> Filter smoothies by ingredients, dietary options (e.g., vegan,
+                                dairy-free), price range, and popularity.</li>
+                            <li><b>Order Management:</b> Logged-in users can place orders, view order history, and
+                                reorder past smoothies.</li>
+                            <li><b>Stripe Integration:</b> Secure online payments powered by Stripe with real-time
+                                feedback and confirmation.</li>
+                            <li><b>Responsive Design:</b> Optimized for smooth browsing and ordering on desktop, tablet,
+                                and mobile devices.</li>
+                            <li><b>Authentication:</b> User login and registration system for managing accounts and
+                                orders.</li>
+                        </ul>
+
+                        Tech Stack:
+                        <p><b>Built with React and Node.js:</b></p>
+                        <ul>
+                            <li>Frontend: React with reusable components, hooks, and dynamic routing (React Router)</li>
+                            <li>Backend: Node.js & Express for API routes and business logic</li>
+                            <li>Database: MongoDB for storing users, products, and orders</li>
+                            <li>State Management: Context API for cart and user state</li>
+                        </ul>
+
+                        <b>Event Handlers:</b>
+                        <ul>
+                            <li>Custom ingredient selections & visual updates</li>
+                            <li>Cart updates (add, remove, quantity change)</li>
+                            <li>Price calculation with tax and discounts</li>
+                            <li>Form validation for checkout and registration</li>
+                            <li>Stripe payment lifecycle (initiate, confirm, handle success/failure)</li>
+                            <li>Filter and sort smoothies dynamically</li>
+                            <li>Persist user sessions and order history</li>
+                        </ul>
+
+                        <div class="repo">
+                            <a href="https://merry-berry.finneh.xyz/" target="_blank"><button value="btn">Web
+                                    App</button></a>
+                            <a href="https://github.com/danilo90lan/Merry-Berry-Akai-Shop" target="_blank"><button
+                                    value="btn">GitHub Repo</button></a>
+                        </div>
+                    </article>
+                </div>
+
+
+                <div class="blog-wrapper">
+                    <article class="blog-topic">
+                        <div class=title>WeatherWise</div>
+                        <div class=title>Forecast Web Application</div>
+                        <p>WeatherWise is a modern weather application that provides real-time weather updates, and
+                            forecasts.</p>
+                        Features:
+                        <ul>
+                            <li><b>Current Conditions:</b> Displays current temperature, humidity, wind speed, and
+                                weather conditions with intuitive icons.</li>
+                            <li><b>Hourly Forecast:</b> Hour-by-hour forecast for the current day to help plan your day.
+                            </li>
+                            <li><b>Daily Forecast:</b> 7-day forecast with high and low temperatures, precipitation
+                                chances, and condition icons.</li>
+                            <li><b>Location Search:</b> Search and save your favorite locations for quick access.</li>
+                            <li><b>Local Storage:</b> Saves cities locally without the need for a database.</li>
+                            <li><b>Default Behavior:</b> Auto-detects location based on IP or precise location with
+                                permission.</li>
+                        </ul>
+                        Tech Stack:
+                        <p><b>Glance Cards:</b></p>
+                        <ul>
+                            <li>Weather icon</li>
+                            <li>Location name and country</li>
+                            <li>Weather condition (e.g., Partly Cloudy, Clear)</li>
+                            <li>Temperature (Celsius)</li>
+                        </ul>
+
+                        <b>Event Handlers:</b>
+                        <ul>
+                            <li>Location name</li>
+                            <li>Weather condition with icon</li>
+                            <li>Temperature</li>
+                            <li>Feels like temperature</li>
+                            <li>High & low temperatures</li>
+                            <li>Hourly and future forecasts</li>
+                            <li>Precipitation chance</li>
+                            <li>Wind speed</li>
+                            <li>Sunrise & sunset times</li>
+                            <li>UV Index</li>
+                            <li>Humidity & dew point</li>
+                            <li>Pressure (inHg)</li>
+                        </ul>
+
+                        <div class="repo">
+                            <a href="https://weather-wizards.netlify.app/" target="_blank"><button value="btn">Web
+                                    App</button></a>
+                            <a href="https://github.com/danilo90lan/Forecast-react_app_API.git" target="_blank"><button
+                                    value="btn">GitHub Repo</button></a>
+                        </div>
+
+                    </article>
+                </div>
+
+
+                <div class="arrows-wrap" id="arrows-bottom">
+                    <div class="arrow">
+                        <a href="./vb.html""><i class=" fa-solid fa-arrow-left"></i>
+                            <p>Previous</p>
+                        </a>
                     </div>
+
+                    <div class="arrow" id="arrow-disabled">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i>
+                            <p>Next</p>
+                        </a>
+                    </div>
+                </div>
 
             </main>
         </div>
 
         <footer>
-            <section class = "information">
+            <section class="information">
 
-                <address class = "social-media">
-                    <li class = "icon"><a href = "https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target = "_blank" class = "pop-up">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a></li>
-                    <li class = "icon"><a href = "https://www.facebook.com/profile.php?id=100008238969482" target = "_blank" class = "pop-up">
-                        <i class="fa-brands fa-facebook"></i>
+                <address class="social-media">
+                    <li class="icon"><a href="https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target="_blank"
+                            class="pop-up">
+                            <i class="fa-brands fa-linkedin"></i>
                         </a></li>
-                        <li class = "icon"><a href = "https://github.com/danilo90lan?tab=repositories" target = "_blank" class = "pop-up">
+                    <li class="icon"><a href="https://www.facebook.com/profile.php?id=100008238969482" target="_blank"
+                            class="pop-up">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a></li>
+                    <li class="icon"><a href="https://github.com/danilo90lan?tab=repositories" target="_blank"
+                            class="pop-up">
                             <i class="fa-brands fa-github"></i>
-                        </a></li>        
+                        </a></li>
                 </address>
-    
-                <section class = "info">       
+
+                <section class="info">
 
                     <address><span><i class="fa-solid fa-phone"></i></span>
                         <span>0401683091</span>
@@ -149,7 +226,7 @@
                     <address><span><i class="fa-solid fa-at"></i></span>
                         <span>danilo.lann@gmail.com</span>
                     </address>
-            
+
                     <address><span><i class="fa-solid fa-location-dot"></i></span>
                         <span>Melbourne, VIC, AU</span>
                     </address>
@@ -161,4 +238,5 @@
     </div>
     <script src="../scripts/toggle.js"></script>
 </body>
+
 </html>
