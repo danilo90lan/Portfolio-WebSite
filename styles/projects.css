@@ -148,7 +148,7 @@
     } */
 
     .arrows-wrap {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .arrow {
