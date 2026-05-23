@@ -19,15 +19,14 @@ body {
     background: var(--background-color);
     margin: 0;
     padding: 0;
-    width: 100dvw;
-    height: 100dvh;
+    min-height: 100vh;
 }
+
 
 /* giving the header full viewport width for mobile and tablet */
 header {
     background-color:  var(--background-color-secondary);
     color: #fff;
-    width: 100dvw;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -140,13 +139,12 @@ button.toggle.active .fa-bars::before {
 footer {
     background: var(--background-color-secondary);
     color: #fff;
-    width: 100dvw;    /* it takes the 100% of the viewport width */
     padding-top: 1rem;
     text-align: center;
 }
 
 .main-box {
-    height: 100dvh;         /* set the full height for the main-box (header, main, footer) */
+    min-height: 100vh;         /* set the full height for the main-box (header, main, footer) */
     display: flex;          /* use flex box to display them in column */
     flex-direction: column;
     justify-content: space-between; /* use space-between, so the header, main and footer push each other away
