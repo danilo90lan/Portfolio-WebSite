@@ -309,9 +309,9 @@ footer {
         transition: all 0.3s ease;
     }
     
-    /* the icon move up by 40px creating a pop up effect */
+    /* the icon move up creating a pop up effect */
     .social-media .icon:hover .pop-up {
-        top: -20px;
+        top: -12px;
     }
 
     .information {
