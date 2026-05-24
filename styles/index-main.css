@@ -112,10 +112,6 @@
     align-items: center;
 }
 
-.profile {
-    text-align: center;
-}
-
 /* media query for desktop */
 @media screen and (width > 768px) {
 
@@ -160,7 +156,6 @@
 .home .home-info {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0;
     padding: 0rem 6rem 0rem 6rem;
