@@ -13,6 +13,7 @@
 .home .home-info {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 3rem;
 }
