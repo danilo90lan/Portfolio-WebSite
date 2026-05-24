@@ -139,7 +139,7 @@ button.toggle.active .fa-bars::before {
 footer {
     background: var(--background-color-secondary);
     color: #fff;
-    padding-top: 1rem;
+    padding: 1rem;
     text-align: center;
 }
 
