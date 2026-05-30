@@ -2,60 +2,35 @@
     box-sizing: border-box; 
 }
 
-/* styling the blog posts text */
-.blog-posts {
-    display: flex;
-    flex-direction: column;
-    font-family: "Roboto", sans-serif;
-    justify-content: center;
-    align-items: center;
-    background: var(--background-color);
-    border-radius: 20px;
-    margin-top: 3rem;
-    box-shadow: var(--deep-shadow);
-    
-}
 
 /* main container (it contains all the cards) set as flexbox and displaying them in column*/
 .cards-container {
     display: flex;
-    flex-direction: column;
+    gap: 3rem;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+    padding: 1rem;
+    
+    border-radius: 20px;
+    box-shadow: var(--shadow);
 }
 
-.post {
-    text-align: center;
-    padding: 0.5rem 2rem 0 2rem;
-}
-
-.post h3 {
-    margin: 0;
-    font-size: 22px;
-    color: black;
-    font-family: "Lato", sans-serif;
-}
 
 .card {
-    width: 220px;
-    height: 350px;
-    border-radius: 20px;
+    width: 80px;
+    height: 80px;
     overflow: hidden;           /* any element exceeding the card container will be hidden 
                                 in this case it's the card-body*/
-    border: 5px solid black;
+
     position:relative;
     margin-top: 1rem;
-    text-align: center;
-    margin-bottom: 2rem;
 }
 
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* it makes the image in proportion avoiding stretching */
-    border-radius: 15px;
 }
 
 /* creating an hidden card that is placed next to the card itself */
@@ -79,19 +54,21 @@
     transition: 1s;     /* it sets the transition time for the card:hover */
 }
 
-.card:hover .card-body{     /* setting the hover for the main card container but modifying the card.body */
-    right: 0;              /*  it overlays the card-body (title, date and description) on top of the card image  */
+/* setting the hover for the main card container but modifying the card.body */
+/*  it overlays the card-body (title, date and description) on top of the card image  */
+
+/* .card:hover .card-body{     
+    right: 0;              
     cursor: pointer;
-}
+} */
 
 /* styling the card title text */
 .card-title {
-    color: #fff;
-    font-size: 23px;
+    font-size: 13px;
     font-weight: bold;
+    text-align: center;
     font-family: "Lato", sans-serif;
-    top:0;
-
+    margin-top: 0.5rem;
 }
 
 
@@ -139,11 +116,8 @@
 
     /* cards container displayed in row */
     .cards-container {
-        flex-direction: row;
         justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 4rem;
-        margin-bottom: 7rem;
+        margin: 0rem 12rem 12rem 12rem;
     }
 
     .blog-wrapper {

@@ -1,110 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danilo Lannocca</title>
-    <link rel = "stylesheet" type = " text/css" href = "../styles/index.css">
-    <link rel = "stylesheet" type = " text/css" href = "../styles/skills.css">
-    <link rel = "stylesheet" type = " text/css" href = "../styles/about.css">
+    <link rel="stylesheet" type=" text/css" href="../styles/index.css">
+    <link rel="stylesheet" type=" text/css" href="../styles/skills.css">
 
-    <link rel = "icon" href = "../images/logo.jpg">
-    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> 
+    <link rel="icon" href="../images/logo.jpg">
+    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <div class =  "main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
-        <div class = "contents"> <!-- the content div contains header and main -->
+    <div class="main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
+        <div class="contents"> <!-- the content div contains header and main -->
             <header>
-                <div class = "logo-text">
-                        <a href = "../index.html">
-                            <img src = "../images/logo.jpg" alt = "Portfolio logo" class = "logo">
-                        </a>
-              
-                        <div class = "main-title"><p class = "name">Danilo Lannocca</p></div>
-                    
+                <div class="logo-text">
+                    <a href="../index.html">
+                        <img src="../images/logo.jpg" alt="Portfolio logo" class="logo">
+                    </a>
+
+                    <div class="main-title">
+                        <p class="name">Danilo Lannocca</p>
+                    </div>
+
                 </div>
-                
+
                 <button class="toggle" id="toggleButton">
                     <i class="fas fa-bars"></i>
                 </button>
-    
+
                 <nav class="nav-links" id="navLinks">
                     <a href="../index.html">Home</a>
                     <a href="#" class="active">Skills</a>
                     <a href="./python.html">Portfolio</a>
                     <a href="./contact.html">Contact</a>
                 </nav>
-            
+
 
             </header>
 
             <main>
-                
+
                 <!-- This div  will have a background-img property in thge .css stylesheet
                     with other properties to resize and position the img -->
-                <div class = "cover-photo">     
+                <div class="cover-photo">
                 </div>
 
-                <div class = "main-topic"><H1>Skills</H1></div>
+                <center>
+                    <div class="main-topic">
+                        <H1>Skills</H1>
+                    </div>
+                </center>
 
                 <!-- this is the main div that contains all the cards -->
-                <div class = "cards-container">
+                <div class="cards-container">
 
                     <!-- Nesting the article to wrap the card-->
-                        <article class = "blog-posts">
-                            <article class = "post"><h2>Python / Flask</h2>
-                                <article class = "card">
-                                    <img src = "../images/python.jpg" alt = "python logo">  <!-- card's background image -->
-                                    <article class = "card-body">   <!-- content of the card -->
-                                        <h2 class = "card-title">Python</h2>
-                                        <p class = "card-description">Have a look at the projects i made</p>
-                                        <a href = "./python.html"><button class = "card-btn">Read more</button></a>
-                                    </article>
-                                </article>
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/python.png" alt="python logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">Python</h2>
+                                <a href="./python.html"><button class="card-btn">Read more</button></a>
                             </article>
                         </article>
+                        <div class="card-title">PYTHON</div>
+                    </article>
 
-                        
-                        <article class = "blog-posts">
-                            <article class = "post"><h2>JavaScript / React</h2>
-                                <article class = "card">
-                                    <img src = "../images/react.png" alt = "javascript logo">  <!-- card's background image -->
-                                    <article class = "card-body">   <!-- content of the card -->
-                                        <h2 class = "card-title">JavaScript</h2>
-                                        <p class = "card-description">Have a look at the projects i made</p>
-                                        <a href = "./javascript.html"><button class = "card-btn">Read more</button></a>
-                                    </article>
-                                </article>
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/react.png" alt="react logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">React</h2>
+                                <a href="./javascript.html"><button class="card-btn">Read more</button></a>
                             </article>
                         </article>
+                        <div class="card-title">REACT</div>
+                    </article>
 
-                        <article class = "blog-posts">
-                            <article class = "post"><h2>VB.NET </h2>
-                                <article class = "card">
-                                    <img src = "../images/vb.jpg" alt = "vb.net logo">  <!-- card's background image -->
-                                    <article class = "card-body">   <!-- content of the card -->
-                                        <h2 class = "card-title">VB.NET</h2>
-                                        <p class = "card-description">Have a look at the projects i made</p>
-                                        <a href = "./vb.html"><button class = "card-btn">Read more</button></a>
-                                    </article>
-                                </article>
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/.net-logo.png" alt="vb.net logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">.NET</h2>
+                                <a href="./vb.html"><button class="card-btn">Read more</button></a>
                             </article>
                         </article>
+                        <div class="card-title">.NET</div>
+                    </article>
 
 
-                        <article class = "blog-posts">
-                            <article class = "post"><h2>SQL</h2>
-                                <article class = "card">
-                                    <img src = "../images/sql.png" alt = "sql logo">  <!-- card's background image -->
-                                    <article class = "card-body">   <!-- content of the card -->
-                                        <h2 class = "card-title">SQL</h2>
-                                        <p class = "card-description">Have a look at the projects i made</p>
-                                        <button class = "card-btn">Read more</button>
-                                    </article>
-                                </article>
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/html.png" alt="HTML logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">HTML</h2>
+                                <button class="card-btn">Read more</button>
                             </article>
                         </article>
+                        <div class="card-title">HTML</div>
+                    </article>
+
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/css.png" alt="css logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">CSS</h2>
+                                <button class="card-btn">Read more</button>
+                            </article>
+                        </article>
+                        <div class="card-title">CSS</div>
+                    </article>
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/js.png" alt="javascript logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">JavaScript</h2>
+                                <button class="card-btn">Read more</button>
+                            </article>
+                        </article>
+                        <div class="card-title">JavaScript</div>
+                    </article>
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/C.png" alt="C# logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">C#</h2>
+                                <button class="card-btn">Read more</button>
+                            </article>
+                        </article>
+                        <div class="card-title">C#</div>
+                    </article>
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/mongo.png" alt="MongoDB logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">MongoDB</h2>
+                                <button class="card-btn">Read more</button>
+                            </article>
+                        </article>
+                        <div class="card-title">MongoDB</div>
+                    </article>
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/git.png" alt="GIT logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">GIT</h2>
+                                <button class="card-btn">Read more</button>
+                            </article>
+                        </article>
+                        <div class="card-title">GIT</div>
+                    </article>
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/firebase.png" alt="Firebase logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">Firebase</h2>
+                                <button class="card-btn">Read more</button>
+                            </article>
+                        </article>
+                        <div class="card-title">FIREBASE</div>
+                    </article>
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/vb.jpg" alt="Visual Basic logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">VISUAL BASIC</h2>
+                                <button class="card-btn">Read more</button>
+                            </article>
+                        </article>
+                        <div class="card-title">VISUAL BASIC</div>
+                    </article>
+
+
+                    <article class="post">
+                        <article class="card">
+                            <img src="../images/sql.png" alt="SQL logo"> <!-- card's background image -->
+                            <article class="card-body"> <!-- content of the card -->
+                                <h2 class="card-title">SQL</h2>
+                                <button class="card-btn">Read more</button>
+                            </article>
+                        </article>
+                        <div class="card-title">SQL</div>
+                    </article>
 
                 </div>
 
@@ -112,21 +203,24 @@
         </div>
 
         <footer>
-            <section class = "information">
+            <section class="information">
 
-                <address class = "social-media">
-                    <li class = "icon"><a href = "https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target = "_blank" class = "pop-up">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a></li>
-                    <li class = "icon"><a href = "https://www.facebook.com/profile.php?id=100008238969482" target = "_blank" class = "pop-up">
-                        <i class="fa-brands fa-facebook"></i>
+                <address class="social-media">
+                    <li class="icon"><a href="https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target="_blank"
+                            class="pop-up">
+                            <i class="fa-brands fa-linkedin"></i>
                         </a></li>
-                        <li class = "icon"><a href = "https://github.com/danilo90lan?tab=repositories" target = "_blank" class = "pop-up">
+                    <li class="icon"><a href="https://www.facebook.com/profile.php?id=100008238969482" target="_blank"
+                            class="pop-up">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a></li>
+                    <li class="icon"><a href="https://github.com/danilo90lan?tab=repositories" target="_blank"
+                            class="pop-up">
                             <i class="fa-brands fa-github"></i>
-                        </a></li>        
+                        </a></li>
                 </address>
-    
-                <section class = "info">       
+
+                <section class="info">
 
                     <address><span><i class="fa-solid fa-phone"></i></span>
                         <span>0401683091</span>
@@ -135,7 +229,7 @@
                     <address><span><i class="fa-solid fa-at"></i></span>
                         <span>danilo.lann@gmail.com</span>
                     </address>
-            
+
                     <address><span><i class="fa-solid fa-location-dot"></i></span>
                         <span>Melbourne, VIC, AU</span>
                     </address>
@@ -147,4 +241,5 @@
     </div>
     <script src="../scripts/toggle.js"></script>
 </body>
+
 </html>
