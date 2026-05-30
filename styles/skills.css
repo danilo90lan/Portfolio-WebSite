@@ -18,10 +18,7 @@
 .card {
     width: 80px;
     height: 80px;
-    overflow: hidden;
-    /* any element exceeding the card container will be hidden 
-                                in this case it's the card-body*/
-
+   
     position: relative;
     margin-top: 1rem;
 }
@@ -33,42 +30,6 @@
     /* it makes the image in proportion avoiding stretching */
 }
 
-/* creating an hidden card that is placed next to the card itself */
-.card-body {
-    width: 100%;
-    /* giving height and width 100% it will cover the whole card div */
-    height: 100%;
-    position: absolute;
-    /* take out the card-body from the natural flow of the elements */
-    top: 0;
-    /* aligns the card-body with the card container*/
-    right: -100%;
-    /* it will shift the card-body (title, date, description) to the side, right next of the div card
-                        but it can't be seen because of the property overflow: hidden; */
-    border-radius: 15px;
-    background: #1f3d4718;
-    /* set the transaparency */
-    backdrop-filter: blur(5px);
-    /* set the blur filter */
-    color: #fff;
-    padding: 1.5rem;
-    padding-top: 0;
-    margin-top: 0;
-    display: flex;
-    /* card body elements placed in column and centered it */
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    /* it sets the transition time for the card:hover */
-}
-
-/* setting the hover for the main card container but modifying the card.body */
-/*  it overlays the card-body (title, date and description) on top of the card image  */
-
-/* .card:hover .card-body{     
-    right: 0;              
-    cursor: pointer;
-} */
 
 /* styling the card title text */
 .card-title {
@@ -89,18 +50,6 @@
     margin: 0.5rem 0;
 }
 
-/* styling the button */
-.card-btn {
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    background: #8fabba7a;
-    justify-content: center;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
 
 /* styling the blog text */
 .blog-introduction {
