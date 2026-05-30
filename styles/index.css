@@ -194,6 +194,27 @@ footer {
     height: 90px;
 }
 
+.main-topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    margin: 1rem 1rem 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.main-topic h1 {
+    text-align: center;
+    margin-bottom: 0;
+    background: var(--background-color);
+    border-radius: 20px;
+    padding: 0.8rem;
+    letter-spacing: 5px;
+    font-family: "Lato", sans-serif;
+    box-shadow: var(--shadow);
+}
+
 
 /* media query for desktop */
 
@@ -253,8 +274,8 @@ footer {
     }
 
     .main-topic-logo {
-    width: 300px;
-    height: 140px;
+    width: 250px;
+    height: 120px;
 }
 
     .name {
