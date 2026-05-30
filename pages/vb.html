@@ -1,135 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danilo Lannocca</title>
-    <link rel = "stylesheet" type = " text/css" href = "../styles/index.css">
-    <link rel = "stylesheet" type = " text/css" href = "../styles/projects.css">
+    <link rel="stylesheet" type=" text/css" href="../styles/index.css">
+    <link rel="stylesheet" type=" text/css" href="../styles/projects.css">
 
-    <link rel = "icon" href = "../images/logo.jpg">
-    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> 
+    <link rel="icon" href="../images/logo.jpg">
+    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <div class =  "main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
-        <div class = "contents"> <!-- the content div contains header and main -->
+    <div class="main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
+        <div class="contents"> <!-- the content div contains header and main -->
             <header>
-                <div class = "logo-text">
-                        <a href = "../index.html">
-                            <img src = "../images/logo.jpg" alt = "Portfolio logo" class = "logo">
-                        </a>
-              
-                        <div class = "main-title"><p class = "name">Danilo Lannocca</p></div>
-                    
+                <div class="logo-text">
+                    <a href="../index.html">
+                        <img src="../images/logo.jpg" alt="Portfolio logo" class="logo">
+                    </a>
+
+                    <div class="main-title">
+                        <p class="name">Danilo Lannocca</p>
+                    </div>
+
                 </div>
-                
+
                 <button class="toggle" id="toggleButton">
                     <i class="fas fa-bars"></i>
                 </button>
-    
+
                 <nav class="nav-links" id="navLinks">
                     <a href="../index.html">Home</a>
                     <a href="./skills.html">Skills</a>
                     <a href="./python.html" class="active">Portfolio</a>
                     <a href="./contact.html">Contact</a>
                 </nav>
-            
+
 
             </header>
 
             <main>
-                
+
                 <!-- This div  will have a background-img property in thge .css stylesheet
                     with other properties to resize and position the img -->
-                <div class = "cover-photo">  </div>   
-                
-                <div class = "main-topic"><h1>VB.NET</h1></div>
+                <div class="cover-photo"> </div>
 
-                <div class = "arrows-wrap" id = "arrows-top">
-                    <div class = "arrow">
-                        <a href = "./python.html""><i class="fa-solid fa-arrow-left"></i></a></div>
-                    
-                        <div class = "arrow">
-                        <a href = "./javascript.html"><i class="fa-solid fa-arrow-right"></i></a></div>          
+                <div class="arrows-wrap" id="arrows-top">
+                    <div class="arrow">
+                        <a href="./python.html""><i class=" fa-solid fa-arrow-left"></i></a>
+                    </div>
+                    <div>
+                        <img src="../images/NET.png" alt=".NET logo" class="main-topic-logo">
+                    </div>
+                    <div class="arrow">
+                        <a href="./javascript.html"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                    <div class = blog-topic-wrapper>
-                        <article class = "blog-introduction">
-                            <p>During my internship, I developed a VB.NET application for secure and efficient file transfer over a LAN, 
-                                demonstrating my proficiency in network programming and VB.NET. 
-                                This project strengthened my skills in designing practical, high-performance solutions 
-                                with a focus on reliability and user-centered functionality.
-                            </p>   
-                        </article>
-                    </div>
-                        
 
-                    <div class = "blog-wrapper">
-                        <article class = "blog-topic">
-                            <div class = title>TCP Sender</div>
-                            <div class = title>File Transfer Application</div>
-                            The File Transfer Application is a simple client-server application developed in VB.NET that enables users to send and receive files over a network using TCP sockets. Utilizing the Winsock2005DLL for handling network connections and file transfers, this application features a user-friendly graphical interface to streamline the file transfer process.
-                            <p>This project was developed during my internship in Italy, where I gained valuable hands-on experience with network programming and client-server architecture.</p>
-                            <p>The application consists of two main components: the Sender and the Receiver. Users can set up either role to initiate or accept file transfers, making it flexible for various networking scenarios.</p>
-                            Features:
-                            <ul>
-                                    <li><b>Send Files:</b> Users can browse and select files to send to a specified IP address and port.</li>
-                                    <li><b>Receive Files:</b> The application can listen for incoming file transfers on a designated port.</li>
-                                    <li><b>Progress Bar:</b> Users are provided with a visual indication of the file transfer progress, enhancing user experience.</li>
-                                    <li><b>Error Handling:</b> The application includes mechanisms for error handling to ensure robust file transfer processes.</li>
-                            </ul>
-                                Tech Stack:
-                                
-                                <ul>
-                                    <li><b>Main Form (Form1):</b>The main interface of the application, containing controls for sending and receiving files.</li>
-                                    <li><b>Winsock Controls:</b> Listens for incoming connections and manages received data and connects to the server for sending data.</li>
-                                </ul>
-                                
-                                Event Handlers:
-                                <ul>
-                                    <li>Initializes the server to listen for incoming connections on the specified port.</li>
-                                    <li>Connects the client to the specified server IP address and port.</li>
-                                    <li>Opens a file dialog for users to select files for sending.</li>
-                                    <li>Sends the selected file to the connected server.</li>
-                                    <li>Accepts incoming connection requests from clients.</li>
-                                    <li>Processes incoming data and files.</li>
-                                    <li>Updates the progress bar to reflect the current transfer status.</li>
-                                </ul>
-                                                      
-                                <div class = "repo"><a href = "https://github.com/danilo90lan/LAN_FileTransfer" target = "_blank"><button value = "btn">GitHub Repo</button></a></div>
-                           
-                        </article>
-                    </div>
-                        
+                <div class="blog-wrapper">
+                    <article class="blog-topic">
+                        <div class=title>TCP Sender - <br> File Transfer Application</div>
+                        The File Transfer Application is a simple client-server application developed in VB.NET that
+                        enables users to send and receive files over a network using TCP sockets. Utilizing the
+                        Winsock2005DLL for handling network connections and file transfers, this application features a
+                        user-friendly graphical interface to streamline the file transfer process.
+                        <p>This project was developed during my internship in Italy, where I gained valuable hands-on
+                            experience with network programming and client-server architecture.</p>
+                        <p>The application consists of two main components: the Sender and the Receiver. Users can set
+                            up either role to initiate or accept file transfers, making it flexible for various
+                            networking scenarios.</p>
+                        Features:
+                        <ul>
+                            <li><b>Send Files:</b> Users can browse and select files to send to a specified IP address
+                                and port.</li>
+                            <li><b>Receive Files:</b> The application can listen for incoming file transfers on a
+                                designated port.</li>
+                            <li><b>Progress Bar:</b> Users are provided with a visual indication of the file transfer
+                                progress, enhancing user experience.</li>
+                            <li><b>Error Handling:</b> The application includes mechanisms for error handling to ensure
+                                robust file transfer processes.</li>
+                        </ul>
+                        Tech Stack:
 
-                    <div class = "arrows-wrap" id = "arrows-bottom">
-                        <div class = "arrow">
-                            <a href = "./python.html""><i class="fa-solid fa-arrow-left"></i><p>Previous</p></a></div>
-                        
-                            <div class = "arrow">
-                            <a href = "./javascript.html"><i class="fa-solid fa-arrow-right"></i><p>Next</p></a></div>          
+                        <ul>
+                            <li><b>Main Form (Form1):</b>The main interface of the application, containing controls for
+                                sending and receiving files.</li>
+                            <li><b>Winsock Controls:</b> Listens for incoming connections and manages received data and
+                                connects to the server for sending data.</li>
+                        </ul>
+
+                        Event Handlers:
+                        <ul>
+                            <li>Initializes the server to listen for incoming connections on the specified port.</li>
+                            <li>Connects the client to the specified server IP address and port.</li>
+                            <li>Opens a file dialog for users to select files for sending.</li>
+                            <li>Sends the selected file to the connected server.</li>
+                            <li>Accepts incoming connection requests from clients.</li>
+                            <li>Processes incoming data and files.</li>
+                            <li>Updates the progress bar to reflect the current transfer status.</li>
+                        </ul>
+
+                        <div class="repo"><a href="https://github.com/danilo90lan/LAN_FileTransfer"
+                                target="_blank"><button value="btn">GitHub Repo</button></a></div>
+
+                    </article>
+                </div>
+
+
+                <div class="arrows-wrap" id="arrows-bottom">
+                    <div class="arrow">
+                        <a href="./python.html""><i class=" fa-solid fa-arrow-left"></i>
+                            <p>Previous</p>
+                        </a>
                     </div>
+
+                    <div class="arrow">
+                        <a href="./javascript.html"><i class="fa-solid fa-arrow-right"></i>
+                            <p>Next</p>
+                        </a>
+                    </div>
+                </div>
 
             </main>
         </div>
 
         <footer>
-            <section class = "information">
+            <section class="information">
 
-                <address class = "social-media">
-                    <li class = "icon"><a href = "https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target = "_blank" class = "pop-up">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a></li>
-                    <li class = "icon"><a href = "https://www.facebook.com/profile.php?id=100008238969482" target = "_blank" class = "pop-up">
-                        <i class="fa-brands fa-facebook"></i>
+                <address class="social-media">
+                    <li class="icon"><a href="https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target="_blank"
+                            class="pop-up">
+                            <i class="fa-brands fa-linkedin"></i>
                         </a></li>
-                        <li class = "icon"><a href = "https://github.com/danilo90lan?tab=repositories" target = "_blank" class = "pop-up">
+                    <li class="icon"><a href="https://www.facebook.com/profile.php?id=100008238969482" target="_blank"
+                            class="pop-up">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a></li>
+                    <li class="icon"><a href="https://github.com/danilo90lan?tab=repositories" target="_blank"
+                            class="pop-up">
                             <i class="fa-brands fa-github"></i>
-                        </a></li>        
+                        </a></li>
                 </address>
-    
-                <section class = "info">       
+
+                <section class="info">
 
                     <address><span><i class="fa-solid fa-phone"></i></span>
                         <span>0401683091</span>
@@ -138,7 +155,7 @@
                     <address><span><i class="fa-solid fa-at"></i></span>
                         <span>danilo.lann@gmail.com</span>
                     </address>
-            
+
                     <address><span><i class="fa-solid fa-location-dot"></i></span>
                         <span>Melbourne, VIC, AU</span>
                     </address>
@@ -150,4 +167,5 @@
     </div>
     <script src="../scripts/toggle.js"></script>
 </body>
+
 </html>

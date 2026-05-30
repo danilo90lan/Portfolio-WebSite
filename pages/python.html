@@ -1,176 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danilo Lannocca</title>
-    <link rel = "stylesheet" type = " text/css" href = "../styles/index.css">
-    <link rel = "stylesheet" type = " text/css" href = "../styles/projects.css">
+    <link rel="stylesheet" type=" text/css" href="../styles/index.css">
+    <link rel="stylesheet" type=" text/css" href="../styles/projects.css">
 
-    <link rel = "icon" href = "../images/logo.jpg">
-    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script> 
+    <link rel="icon" href="../images/logo.jpg">
+    <script src="https://kit.fontawesome.com/59415e9135.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <div class =  "main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
-        <div class = "contents"> <!-- the content div contains header and main -->
+    <div class="main-box"> <!-- the main-box div contains the header with the nav bar,  the main and the footer -->
+        <div class="contents"> <!-- the content div contains header and main -->
             <header>
-                <div class = "logo-text">
-                        <a href = "../index.html">
-                            <img src = "../images/logo.jpg" alt = "Portfolio logo" class = "logo">
-                        </a>
-              
-                        <div class = "main-title"><p class = "name">Danilo Lannocca</p></div>
-                    
+                <div class="logo-text">
+                    <a href="../index.html">
+                        <img src="../images/logo.jpg" alt="Portfolio logo" class="logo">
+                    </a>
+
+                    <div class="main-title">
+                        <p class="name">Danilo Lannocca</p>
+                    </div>
+
                 </div>
-                
+
                 <button class="toggle" id="toggleButton">
                     <i class="fas fa-bars"></i>
                 </button>
-    
+
                 <nav class="nav-links" id="navLinks">
                     <a href="../index.html">Home</a>
                     <a href="./skills.html">Skills</a>
                     <a href="#" class="active">Portfolio</a>
                     <a href="./contact.html">Contact</a>
                 </nav>
-            
+
 
             </header>
 
             <main>
-                
+
                 <!-- This div  will have a background-img property in thge .css stylesheet
                     with other properties to resize and position the img -->
-                <div class = "cover-photo">  </div>   
-                
-                <div class = "main-topic"><h1>Python</h1></div>
+                <div class="cover-photo"> </div>
 
-                <div class = "arrows-wrap" id = "arrows-top">
-                    <div class = "arrow" id = "arrow-disabled">
-                        <a href = "#""><i class="fa-solid fa-arrow-left"></i></a></div>
-                    
-                        <div class = "arrow">
-                        <a href = "./vb.html"><i class="fa-solid fa-arrow-right"></i></a></div>          
+
+                <div class="arrows-wrap" id="arrows-top">
+                    <div class="arrow" id="arrow-disabled">
+                        <a href="#""><i class=" fa-solid fa-arrow-left"></i></a>
+                    </div>
+                    <div>
+                        <img src="../images/Python-Logo.png" alt="Python logo" class="main-topic-logo">
+                    </div>
+                    <div class="arrow">
+                        <a href="./vb.html"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                    <div class = blog-topic-wrapper>
-                        <article class = "blog-introduction">
-                            <p>As a passionate Python developer, I have created several backend applications that demonstrate my ability to build robust and efficient systems. 
-                                My projects focus on practical solutions to real-world problems, emphasizing user experience, security, and performance.
-                            </p>   
-                        </article>
+
+                <div class="blog-wrapper">
+                    <article class="blog-topic">
+                        <div class=title>Currency Exchange <br>Back-end API</div>
+
+                        The Currency Exchange API is a backend application that facilitates currency exchange and
+                        account management.
+                        It allows users to create multiple accounts, each assigned a unique currency (e.g., AUD, USD,
+                        EUR, GBP).
+                        Users can deposit funds, transfer money between accounts, and the application automatically
+                        performs currency conversions
+                        based on current exchange rates fetched from a third-party API.
+                        Key features include:
+                        <ul>
+                            <li><b>Account Management</b> Open and manage multiple accounts in various currencies.</li>
+                            <li><b>Real-Time Currency Exchange:</b> Fetches updated exchange rates from a third-party
+                                API.</li>
+                            <li><b>Deposit and Exchange Operations:</b> Easily deposit money and perform currency
+                                exchanges.</li>
+                            <li><b>History of Transactions:</b> Records all deposits and exchanges for user review.</li>
+                            <li><b>Authorization and Security:</b> Implements secure user authentication via JWT.</li>
+                        </ul>
+                        Tech Stack:
+
+                        <ul>
+                            <li><b>Python</b></li>
+                            <li><b>Flask:</b> A lightweight WSGI web application framework for Python.</li>
+                            <li><b>Marshmallow:</b> For object serialization and deserialization.</li>
+                            <li><b>PostgreSQL:</b> Relational database management system.</li>
+                            <li><b>APScheduler:</b> For scheduling background tasks.</li>
+                            <li><b>Third-Party API:</b> Utilizes the Open Exchange Rates API for currency data.</li>
+                            <li><b>JWT token:</b> For secure authentication.</li>
+                        </ul>
+                        <div class="repo"><a href="https://github.com/danilo90lan/API_Web_Server_Currency_Exchange"
+                                target="_blank"><button value="btn">GitHub Repo</button></a></div>
+
+                    </article>
+
+                    <article class="blog-topic">
+                        <div class=title>JARVIS - Terminal AI ChatBot</div>
+                        JARVIS is a command-line virtual assistant built using the OpenAI API.
+                        This assistant can engage in conversation and respond to user input, simulating an interactive
+                        dialogue.
+                        Key features include:
+                        <ul>
+                            <li><b>Engagement:</b> Engage in conversations and maintain conversation history.</li>
+                            <li><b>Customization:</b> Easily change the assistant's name or behavior.</li>
+                            <li><b>Error Handling:</b> Implement a retry mechanism for handling rate limit errors.</li>
+                        </ul>
+                        Tech Stack:
+
+                        <ul>
+                            <li><b>Python</b></li>
+                            <li><b>OpenAI API:</b> For natural language processing and conversation.</li>
+                        </ul>
+                        <div class="repo"><a href="https://github.com/danilo90lan/JARVIS-Terminal-ChatBot-AI.git"
+                                target="_blank"><button value="btn">GitHub Repo</button></a></div>
+
+                    </article>
+
+                    <article class="blog-topic">
+                        <div class=title>Ripe TomatoAPI <br>Web Server</div>
+                        The Ripe Tomato API Web Server is a backend application designed to manage data related to ripe
+                        tomatoes.
+                        It provides a RESTful API for performing CRUD (Create, Read, Update, Delete) operations on
+                        tomato data and integrates with a PostgreSQL relational database for data storage.
+                        Key features include:
+                        <ul>
+                            <li><b>RESTful API:</b> Interact with tomato data using standard HTTP methods.</li>
+                            <li><b>CRUD Operations:</b> Create, read, update, and delete tomato entries.</li>
+                            <li><b>Authentication:</b> Secure access to the API endpoints using JSON Web Tokens (JWT).
+                            </li>
+                            <li><b>Database Integration:</b> Utilizes PostgreSQL for reliable data storage.</li>
+                            <li><b>Background Tasks:</b> Periodic tasks for updating data and maintenance.</li>
+                        </ul>
+                        Technologies Used:
+
+                        <ul>
+                            <li><b>Python</b></li>
+                            <li><b>Flask:</b> A lightweight WSGI web application framework for Python.</li>
+                            <li><b>Marshmallow:</b> For object serialization and deserialization.</li>
+                            <li><b>PostgreSQL:</b> Relational database management system.</li>
+                            <li><b>JWT token:</b> For secure authentication.</li>
+                        </ul>
+                        <div class="repo"><a href="https://github.com/danilo90lan/API_WebServer_Ripe_tomato"
+                                target="_blank"><button value="btn">GitHub Repo</button></a></div>
+
+                    </article>
+
+
+                </div>
+
+                <div class="arrows-wrap" id="arrows-bottom">
+                    <div class="arrow" id="arrow-disabled">
+                        <a href="#""><i class=" fa-solid fa-arrow-left"></i>
+                            <p>Previous</p>
+                        </a>
                     </div>
-                        
 
-                    <div class = "blog-wrapper">
-                        <article class = "blog-topic">
-                            <div class = title>Currency Exchange</div>
-                            <div class = title>Back-end API</div>
-                            The Currency Exchange API is a backend application that facilitates currency exchange and account management. 
-                            It allows users to create multiple accounts, each assigned a unique currency (e.g., AUD, USD, EUR, GBP). 
-                            Users can deposit funds, transfer money between accounts, and the application automatically performs currency conversions 
-                            based on current exchange rates fetched from a third-party API. 
-                            Key features include:
-                                <ul>
-                                    <li><b>Account Management</b> Open and manage multiple accounts in various currencies.</li>
-                                    <li><b>Real-Time Currency Exchange:</b> Fetches updated exchange rates from a third-party API.</li>
-                                    <li><b>Deposit and Exchange Operations:</b> Easily deposit money and perform currency exchanges.</li>
-                                    <li><b>History of Transactions:</b> Records all deposits and exchanges for user review.</li>
-                                    <li><b>Authorization and Security:</b> Implements secure user authentication via JWT.</li>
-                            </ul>
-                                Tech Stack:
-                                
-                                <ul>
-                                    <li><b>Python</b></li>
-                                    <li><b>Flask:</b> A lightweight WSGI web application framework for Python.</li>
-                                    <li><b>Marshmallow:</b> For object serialization and deserialization.</li>
-                                    <li><b>PostgreSQL:</b> Relational database management system.</li>
-                                    <li><b>APScheduler:</b> For scheduling background tasks.</li>
-                                    <li><b>Third-Party API:</b> Utilizes the Open Exchange Rates API for currency data.</li>
-                                    <li><b>JWT token:</b> For secure authentication.</li>
-                                </ul>
-                                <div class = "repo"><a href = "https://github.com/danilo90lan/API_Web_Server_Currency_Exchange" target = "_blank"><button value = "btn">GitHub Repo</button></a></div>
-                           
-                        </article>
-
-                        <article class = "blog-topic">
-                            <div class = title>JARVIS</div>
-                            <div class = title>AI - Virtual Assistant</div>
-                            JARVIS is a command-line virtual assistant built using the OpenAI API. 
-                            This assistant can engage in conversation and respond to user input, simulating an interactive dialogue. 
-                            Key features include:
-                                <ul>
-                                    <li><b>Engagement:</b> Engage in conversations and maintain conversation history.</li>
-                                    <li><b>Customization:</b> Easily change the assistant's name or behavior.</li>
-                                    <li><b>Error Handling:</b> Implement a retry mechanism for handling rate limit errors.</li>
-                            </ul>
-                                Tech Stack:
-                                
-                                <ul>
-                                    <li><b>Python</b></li>
-                                    <li><b>OpenAI API:</b> For natural language processing and conversation.</li>
-                                </ul>
-                                <div class = "repo"><a href = "https://github.com/danilo90lan/JARVIS-Terminal-ChatBot-AI.git" target = "_blank"><button value = "btn">GitHub Repo</button></a></div>
-                           
-                        </article>
-
-                        <article class = "blog-topic">
-                            <div class = title>Ripe Tomato</div>
-                            <div class = title>API Web Server</div>
-                                The Ripe Tomato API Web Server is a backend application designed to manage data related to ripe tomatoes. 
-                                It provides a RESTful API for performing CRUD (Create, Read, Update, Delete) operations on tomato data and integrates with a PostgreSQL relational database for data storage. 
-                                Key features include:
-                                <ul>
-                                    <li><b>RESTful API:</b> Interact with tomato data using standard HTTP methods.</li>
-                                    <li><b>CRUD Operations:</b> Create, read, update, and delete tomato entries.</li>
-                                    <li><b>Authentication:</b> Secure access to the API endpoints using JSON Web Tokens (JWT).</li>
-                                    <li><b>Database Integration:</b> Utilizes PostgreSQL for reliable data storage.</li>
-                                    <li><b>Background Tasks:</b> Periodic tasks for updating data and maintenance.</li>
-                            </ul>
-                                Technologies Used:
-                                
-                                <ul>
-                                    <li><b>Python</b></li>
-                                    <li><b>Flask:</b> A lightweight WSGI web application framework for Python.</li>
-                                    <li><b>Marshmallow:</b> For object serialization and deserialization.</li>
-                                    <li><b>PostgreSQL:</b> Relational database management system.</li>
-                                    <li><b>JWT token:</b> For secure authentication.</li>
-                                </ul>
-                            <div class = "repo"><a href = "https://github.com/danilo90lan/API_WebServer_Ripe_tomato" target = "_blank"><button value = "btn">GitHub Repo</button></a></div>
-                           
-                        </article>
-
-
+                    <div class="arrow">
+                        <a href="./vb.html"><i class="fa-solid fa-arrow-right"></i>
+                            <p>Next</p>
+                        </a>
                     </div>
-                        
-                    <div class = "arrows-wrap" id = "arrows-bottom">
-                        <div class = "arrow" id = "arrow-disabled">
-                            <a href = "#""><i class="fa-solid fa-arrow-left"></i><p>Previous</p></a></div>
-                        
-                            <div class = "arrow">
-                            <a href = "./vb.html"><i class="fa-solid fa-arrow-right"></i><p>Next</p></a></div>          
-                    </div>
+                </div>
 
             </main>
         </div>
 
         <footer>
-            <section class = "information">
+            <section class="information">
 
-                <address class = "social-media">
-                    <li class = "icon"><a href = "https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target = "_blank" class = "pop-up">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a></li>
-                    <li class = "icon"><a href = "https://www.facebook.com/profile.php?id=100008238969482" target = "_blank" class = "pop-up">
-                        <i class="fa-brands fa-facebook"></i>
+                <address class="social-media">
+                    <li class="icon"><a href="https://www.linkedin.com/in/danilo-lannocca-a20b49323/" target="_blank"
+                            class="pop-up">
+                            <i class="fa-brands fa-linkedin"></i>
                         </a></li>
-                        <li class = "icon"><a href = "https://github.com/danilo90lan?tab=repositories" target = "_blank" class = "pop-up">
+                    <li class="icon"><a href="https://www.facebook.com/profile.php?id=100008238969482" target="_blank"
+                            class="pop-up">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a></li>
+                    <li class="icon"><a href="https://github.com/danilo90lan?tab=repositories" target="_blank"
+                            class="pop-up">
                             <i class="fa-brands fa-github"></i>
-                        </a></li>        
+                        </a></li>
                 </address>
-    
-                <section class = "info">       
+
+                <section class="info">
 
                     <address><span><i class="fa-solid fa-phone"></i></span>
                         <span>0401683091</span>
@@ -179,7 +197,7 @@
                     <address><span><i class="fa-solid fa-at"></i></span>
                         <span>danilo.lann@gmail.com</span>
                     </address>
-            
+
                     <address><span><i class="fa-solid fa-location-dot"></i></span>
                         <span>Melbourne, VIC, AU</span>
                     </address>
@@ -191,4 +209,5 @@
     </div>
     <script src="../scripts/toggle.js"></script>
 </body>
+
 </html>

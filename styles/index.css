@@ -180,29 +180,6 @@ footer {
     padding: 0.5rem;
 }
 
-/* styling and center the main topic title of each page */
-.main-topic {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    color: black;
-    margin: 1rem 1rem 2rem 1rem;
-    margin-bottom: 2rem;
-}
-
-.main-topic h1 {
-    text-align: center;
-    margin-bottom: 0;
-    background: var(--background-color);
-    border-radius: 20px;
-    padding: 0.8rem;
-    letter-spacing: 5px;
-    font-family: "Lato", sans-serif;
-    box-shadow: var(--shadow);
-}
-
 /* setting the background property of the div for tyhe cover image */
 .cover-photo {
     background-image: url(../images/background2.jpg);
@@ -212,6 +189,10 @@ footer {
     height: 100px;
 }
 
+.main-topic-logo {
+    width: 250px;
+    height: 130px;
+}
 
 
 /* media query for desktop */
@@ -270,6 +251,11 @@ footer {
         height: 150px;
         margin: 0;
     }
+
+    .main-topic-logo {
+    width: 300px;
+    height: 140px;
+}
 
     .name {
         font-size: 32px;
