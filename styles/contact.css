@@ -77,6 +77,6 @@ form textarea {
 /* media query for desktop */
 @media screen and (width > 768px) {
     .form-wrap {
-        width: 40dvw;
+        width: 600px;
     }
 }
