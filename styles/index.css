@@ -343,6 +343,7 @@ footer {
     nav {
         width: 50dvw;
         gap: 3rem;
+        border-radius: 0 0 0 20px;
     }
 
     header {
