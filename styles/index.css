@@ -239,6 +239,7 @@ footer {
         height: auto;
         gap: 2rem;
         padding: 5rem 0 2rem 0;
+        border-radius: 0 0 0 20px;
     }
     
     /* styling the nav bar links */
