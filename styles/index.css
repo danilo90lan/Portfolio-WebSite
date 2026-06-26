@@ -186,7 +186,7 @@ footer {
     background-position: fixed;
     background-size: cover;
     background-position: center;
-    height: 100px;
+    height: 130px;
 }
 
 .main-topic-logo {
@@ -288,7 +288,7 @@ footer {
     }
 
     .cover-photo {
-        height: 230px;
+        height: 270px;
     }
 
     footer {            
