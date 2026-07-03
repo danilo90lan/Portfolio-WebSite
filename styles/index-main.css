@@ -90,7 +90,7 @@
 }
 
 .home-info .right {
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 /* .right .profile {
@@ -120,6 +120,7 @@
     .home {
         padding: 100px 0 100px;
         margin: 7rem;
+        margin-top: 4rem;
     
     }
 

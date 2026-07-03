@@ -3,9 +3,9 @@
 
 /* declaring the variables and the main font-family used for the nav bar, body and footer */
 :root {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    --background-color:whitesmoke;
+    --background-color: whitesmoke;
     --background-color-secondary: hsl(211, 82%, 13%);
     --background-transparency: hsla(211, 82%, 13%, 0.940);
     --button-color: #B20000;
@@ -25,11 +25,13 @@ body {
 
 /* giving the header full viewport width for mobile and tablet */
 header {
-    background-color:  var(--background-color-secondary);
+    background-color: var(--background-color-secondary);
     color: #fff;
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
+    height: 240px;
 }
 
 /* styling the logo container */
@@ -63,7 +65,7 @@ header {
 
 /* styling the nav bar links */
 nav a {
-    color:#fff;
+    color: #fff;
     font-size: 17px;
     font-weight: bold;
     text-decoration: none;
@@ -72,8 +74,8 @@ nav a {
 }
 
 
-  /* Navigation styles */
-  nav {
+/* Navigation styles */
+nav {
     display: flex;
     flex-wrap: wrap;
     font-size: 17px;
@@ -83,7 +85,8 @@ nav a {
     padding-top: 4rem;
     gap: 1rem;
     position: fixed;
-    right: -60vw; /* Initially hide off-screen */
+    right: -60vw;
+    /* Initially hide off-screen */
     width: 60vw;
     height: 100vh;
     background-color: var(--background-transparency);
@@ -93,7 +96,8 @@ nav a {
 
 /* When nav has the 'active' class, slide it in */
 nav.active {
-    right: 0; /* Slide in */
+    right: 0;
+    /* Slide in */
 }
 
 nav a.active {
@@ -111,7 +115,8 @@ button.toggle {
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 1001; /* Make sure the button is above the nav */
+    z-index: 1001;
+    /* Make sure the button is above the nav */
 }
 
 /* #toggleButton {
@@ -121,17 +126,21 @@ button.toggle {
 
 /* When the button is active, change the hamburger icon to an X */
 button.toggle .fa-bars {
-    font-size: 30px; /* Adjust the size of the hamburger icon */
+    font-size: 30px;
+    /* Adjust the size of the hamburger icon */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 button.toggle.active .fa-bars {
-    transform: rotate(90deg); /* Rotate the hamburger to an "X" */
+    transform: rotate(90deg);
+    /* Rotate the hamburger to an "X" */
 }
 
 button.toggle.active .fa-bars::before {
-    content: '\f00d'; /* Change to the "X" icon from Font Awesome */
-    transform: rotate(90deg); /* Rotate the "X" icon */
+    content: '\f00d';
+    /* Change to the "X" icon from Font Awesome */
+    transform: rotate(90deg);
+    /* Rotate the "X" icon */
 }
 
 
@@ -141,17 +150,57 @@ footer {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    position: relative;
+    height: 280px;
 }
 
+.information {
+    margin-top: 5.5rem;
+}
+
+.custom-shape-divider-top-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-footer svg {
+    position: relative;
+    display: block;
+    width: calc(162% + 1.3px);
+    height: 166px;
+}
+
+.custom-shape-divider-top-footer .shape-fill {
+    fill: whitesmoke;
+    /* match your footer background */
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .custom-shape-divider-top-footer svg {
+        width: calc(191% + 1.3px);
+        height: 166px;
+    }
+}
+
+
 .main-box {
-    min-height: 100vh;         /* set the full height for the main-box (header, main, footer) */
-    display: flex;          /* use flex box to display them in column */
+    min-height: 100vh;
+    /* set the full height for the main-box (header, main, footer) */
+    display: flex;
+    /* use flex box to display them in column */
     flex-direction: column;
-    justify-content: space-between; /* use space-between, so the header, main and footer push each other away
+    justify-content: space-between;
+    /* use space-between, so the header, main and footer push each other away
                                         in order for the header to be always at the top, the main at the center and the footer at the bottom */
 }
 
-.social-media {        /* the icons in the footer section are displayed with flex box */
+.social-media {
+    /* the icons in the footer section are displayed with flex box */
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -170,23 +219,16 @@ footer {
     width: 50px;
     height: 50px;
     transition: all 0.2s ease;
-    
+
 }
+
 
 .info span {
     margin-right: 0.5rem;
 }
+
 .info address {
     padding: 0.5rem;
-}
-
-/* setting the background property of the div for tyhe cover image */
-.cover-photo {
-    background-image: url(../images/background2.jpg);
-    background-position: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 130px;
 }
 
 .main-topic-logo {
@@ -215,18 +257,45 @@ footer {
     box-shadow: var(--shadow);
 }
 
+.custom-shape-divider-bottom-1783118027 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1783118027 svg {
+    position: relative;
+    display: block;
+    width: calc(162% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-bottom-1783118027 .shape-fill {
+    fill: whitesmoke;
+}
+
 
 /* media query for desktop */
 
- @media screen and (width > 768px) {
+@media screen and (width > 768px) {
     .logo-text {
         flex-direction: row;
         justify-content: space-around;
         margin: 2rem 0 2rem;
     }
 
+    .custom-shape-divider-bottom-1783118027 svg {
+        width: calc(191% + 1.3px);
+        height: 166px;
+    }
+
     header {
-        height: 220px;
+        height: 290px;
+
     }
 
     button.toggle {
@@ -241,28 +310,34 @@ footer {
         padding: 5rem 0 2rem 0;
         border-radius: 0 0 0 20px;
     }
-    
+
     /* styling the nav bar links */
     nav a {
-        font-size: 20px;  
+        font-size: 20px;
     }
 
     /* creating an underline animation when hover the nav link */
 
     /* create a pseudo element after the element */
     nav a::after {
-        content: "";        /* giving an empty content in order for the pseudo element to be created*/
-        display: block;    
-        height: 3px;        /* create ana element of 3px height, the width is the same width of the <a> element */
+        content: "";
+        /* giving an empty content in order for the pseudo element to be created*/
+        display: block;
+        height: 3px;
+        /* create ana element of 3px height, the width is the same width of the <a> element */
         background-color: #fff;
-        transform: scale(0);        /* scale(0) resize the new pseudo element to 0 creating an hiding effect*/
-        transition: 0.3s all ease-in-out;   /* setting the transition time */
-        transform-origin: left;   /* starting point of the animation */
+        transform: scale(0);
+        /* scale(0) resize the new pseudo element to 0 creating an hiding effect*/
+        transition: 0.3s all ease-in-out;
+        /* setting the transition time */
+        transform-origin: left;
+        /* starting point of the animation */
     }
 
     /* hovering the link*/
     nav a:hover::after {
-        transform: scale(1);        /* scale(1) make the pseudo element be visible 
+        transform: scale(1);
+        /* scale(1) make the pseudo element be visible 
                                         again with a sliding effect*/
     }
 
@@ -274,9 +349,9 @@ footer {
     }
 
     .main-topic-logo {
-    width: 250px;
-    height: 120px;
-}
+        width: 250px;
+        height: 120px;
+    }
 
     .name {
         font-size: 32px;
@@ -287,12 +362,10 @@ footer {
         margin-top: 1.5rem;
     }
 
-    .cover-photo {
-        height: 270px;
-    }
-
-    footer {            
-        margin: 0;  /* set the margin back to 0 */
+    footer {
+        height: 240px;
+        margin: 0;
+        /* set the margin back to 0 */
     }
 
     /* styling the info inside the footer */
@@ -315,7 +388,7 @@ footer {
         opacity: 1;
         transition: all 0.3s ease;
     }
-    
+
     /* the icon move up creating a pop up effect */
     .social-media .icon:hover .pop-up {
         top: -12px;
@@ -324,14 +397,15 @@ footer {
     .information {
         display: flex;
         justify-content: space-between;
+        margin-top: 3rem;
     }
 }
 
 
 /* media query for tablets */
 
- @media screen and (min-width: 600px) and (max-width: 768px) {
-    
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
     /* displaying the logo at the left and the title name at the right */
     .logo-text {
         flex-direction: row;
