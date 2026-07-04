@@ -222,11 +222,6 @@ footer {
 
 }
 
-
-.info span {
-    margin-right: 0.5rem;
-}
-
 .info address {
     padding: 0.5rem;
 }
@@ -365,14 +360,13 @@ footer {
     footer {
         height: 240px;
         margin: 0;
+        padding-right: 3rem;
         /* set the margin back to 0 */
     }
 
     /* styling the info inside the footer */
     .info span {
         font-size: 20px;
-        margin-right: 0.5rem;
-        margin-bottom: 2rem;
     }
 
     .social-media {
