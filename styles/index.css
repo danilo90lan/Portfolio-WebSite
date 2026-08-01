@@ -170,21 +170,13 @@ footer {
 .custom-shape-divider-top-footer svg {
     position: relative;
     display: block;
-    width: calc(162% + 1.3px);
+    width: calc(191% + 1.3px);
     height: 166px;
 }
 
 .custom-shape-divider-top-footer .shape-fill {
     fill: whitesmoke;
     /* match your footer background */
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-    .custom-shape-divider-top-footer svg {
-        width: calc(191% + 1.3px);
-        height: 166px;
-    }
 }
 
 
@@ -265,7 +257,7 @@ footer {
 .custom-shape-divider-bottom-1783118027 svg {
     position: relative;
     display: block;
-    width: calc(162% + 1.3px);
+    width: calc(191% + 1.3px);
     height: 80px;
 }
 
@@ -284,7 +276,6 @@ footer {
     }
 
     .custom-shape-divider-bottom-1783118027 svg {
-        width: calc(191% + 1.3px);
         height: 166px;
     }
 
